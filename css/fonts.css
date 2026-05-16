@@ -1,0 +1,9 @@
+@font-face {
+    font-family: SourceSans3;
+    src: url('/assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: Syne;
+    src: url('/assets/fonts/Syne/Syne-VariableFont_wght.ttf');
+}
