@@ -7,10 +7,62 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./css/fonts.css">
         <link rel="stylesheet" href="./css/standard.css">
+        <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
     </head>
     <body>
-        <h1>My Portfolio</h1>
-        <h3>Hi, i'm Mischa Siegrist <br>A webdev based in Interlaken, Switzerland</h3>
+
+        <header>
+            <nav>
+                <div id="nav-left">
+                    <div id="nav-logo-container">
+                        <img id="nav-logo" src="./assets/img/logo.svg" alt="Logo">
+                        <span id="nav-logo-text">mischa siegrist</span>
+                    </div>
+                </div>
+                <div id="nav-right">
+                    <div id="lang-switch">
+                        <span onclick="switchLanguage('de')" class="lang-switch-option selected">DE</span>
+                        <span onclick="switchLanguage('en')" class="lang-switch-option">EN</span>
+                    </div>
+                    <div id="nav-toggle" onclick="openNavbar()">
+                        <span class="nav-toggle-bar" id="bar1"></span>
+                        <span class="nav-toggle-bar" id="bar2"></span>
+                        <span class="nav-toggle-bar" id="bar3"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="hero">
+            <div id="hero-content">
+            
+                <h1>Frontend<br>Developer</h1>
+                <div id="hero-subtitle-with-spacer">
+                    <span id="hero-spacer"></span>
+                    <h3 id="hero-subtitle" class="hightlighted-text">Mischa Siegrist</h3>
+                </div>
+
+                <div id="hero-empty-space">
+                    <a class="vertical-text" href="mailto:info@mischasiegrist.ch">info@mischasiegrist.ch</a>
+
+                    <div id="scroll-down">
+                        <img id="scroll-arrow" src="./assets/icons/arrow.svg" alt="Scroll Arrow">
+                        <span>Scroll<br>Down</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section id="about">
+
+        </section>
+
+
+        <footer>
+
+
+        </footer>
+
 
     </body>
     <script src="./script.js"></script>

@@ -4,12 +4,37 @@
     padding: 0;
 }
 
+:root {
+    --background-color: #FFFCF3;
+    --highlighted: #00BC8F;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+.hightlighted-text {
+    color: var(--highlighted);
+}
+
 a {
     text-decoration: none;
+    font-family: SourceSans3;
+    color: black;
+}
+
+a:hover {
+    color: var(--highlighted);
+}
+
+.vertical-text {
+    writing-mode: sideways-lr;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 96px;
+    font-family: Syne;
+    font-weight: 800;
 }
 h2 {
     font-size: 40px;
