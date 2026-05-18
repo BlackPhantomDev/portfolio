@@ -16,13 +16,13 @@
                 <div id="nav-left">
                     <div id="nav-logo-container">
                         <img id="nav-logo" src="./assets/img/logo.svg" alt="Logo">
-                        <span id="nav-logo-text">mischa siegrist</span>
+                        <!-- span id="nav-logo-text">mischa siegrist</!-->
                     </div>
                 </div>
                 <div id="nav-right">
                     <div id="lang-switch">
-                        <span onclick="switchLanguage('de')" class="lang-switch-option selected">DE</span>
-                        <span onclick="switchLanguage('en')" class="lang-switch-option">EN</span>
+                        <span onclick="switchLanguage('de')" class="lang-switch-option">DE</span>
+                        <span onclick="switchLanguage('en')" class="lang-switch-option selected">EN</span>
                     </div>
                     <div id="nav-toggle" onclick="openNavbar()">
                         <span class="nav-toggle-bar" id="bar1"></span>
@@ -33,30 +33,47 @@
             </nav>
         </header>
 
-        <main id="hero">
-            <div id="hero-content">
-            
-                <h1>Frontend<br>Developer</h1>
-                <div id="hero-subtitle-with-spacer">
-                    <span id="hero-spacer"></span>
-                    <h3 id="hero-subtitle" class="hightlighted-text">Mischa Siegrist</h3>
-                </div>
+        <main id="hero">            
+            <h1>Frontend<br>Developer</h1>
+            <div id="hero-subtitle-with-spacer">
+                <span id="hero-spacer"></span>
+                <h3 id="hero-subtitle" class="hightlighted-text">Mischa Siegrist</h3>
+            </div>
 
-                <div id="hero-empty-space">
-                    <a class="vertical-text" href="mailto:info@mischasiegrist.ch">info@mischasiegrist.ch</a>
+            <div id="hero-empty-space">
+                <a class="vertical-text" href="mailto:info@mischasiegrist.ch">info@mischasiegrist.ch</a>
 
-                    <div id="scroll-down">
-                        <img id="scroll-arrow" src="./assets/icons/arrow.svg" alt="Scroll Arrow">
-                        <span>Scroll<br>Down</span>
-                    </div>
+                <div id="scroll-down">
+                    <img id="scroll-arrow" src="./assets/icons/arrow.svg" alt="Scroll Arrow">
+                    <span>Scroll<br>Down</span>
                 </div>
             </div>
         </main>
 
         <section id="about">
-
+            <h2>About me</h2>
+            <div id="about-wrapper">
+                <div id="about-left">
+                    <p>Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.<br>Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.</p>
+                    <div id="about-details">
+                        <p><img src="./assets/icons/house.svg" alt="House icon"><span>Based in </span></p>
+                        <p><img src="./assets/icons/laptop.svg" alt="Laptop icon"><span>Open to work Remote</span></p>
+                    </div>
+                    <div id="about-contact-btn">
+                        <button class="primary-btn">Let's talk</button>
+                    </div>
+                </div>
+                <div id="about-right">
+                    <img src="./assets/img/portrait.png" alt="Portrait">
+                </div>
+            </div>
         </section>
 
+        <div id="to-skills">
+            <button class="go-to-next-section">
+                <img src="./assets/icons/arrow.svg" alt="Arrow">
+            </button>
+        </div>
 
         <footer>
 

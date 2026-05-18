@@ -31,13 +31,48 @@ a:hover {
     writing-mode: sideways-lr;
 }
 
+.primary-btn {
+    all: unset;
+    display: inline-block;
+    padding: 12px 40px;
+    border: 2.5px solid #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: SourceSans3, sans-serif;
+    background-color: transparent;
+    letter-spacing: 0.02em;
+    transition: all .2s ease-in-out;
+}
+
+.primary-btn:hover {
+    transition: all .2s ease-in-out;
+    padding: 12px 72px;
+}
+
+.go-to-next-section {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
 h1 {
-    font-size: 96px;
+    font-size: 128px;
     font-family: Syne;
     font-weight: 800;
 }
 h2 {
-    font-size: 40px;
+    font-size: 78px;
+    font-family: Syne;
+    font-weight: 800;
+}
+h2:hover {
+    color: var(--highlighted);
+    cursor: default;
 }
 h3 {
     font-size: 28px;
