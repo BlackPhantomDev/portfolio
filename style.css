@@ -219,8 +219,79 @@ nav {
 }
 
 #to-skills button img {
-    
     rotate: 45deg;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+}
+
+#skills-wrapper {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 5px solid black;
+    padding: 96px;
+    width: 100%;
+    gap: 48px;
+}
+
+#skills-wrapper #skills-wrapper-title {
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-color);
+    padding: 0 8px;
+    white-space: nowrap;
+}
+
+#skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-family: SourceSans3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skill img {
+    height: 64px;
+}
+
+#skill-open-to-learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-family: SourceSans3;
+    font-size: 22px;
+}
+
+#to-portfolio {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 64px 0;
+}
+
+#to-portfolio button img {
+    rotate: -45deg;
 }
 
 footer {
