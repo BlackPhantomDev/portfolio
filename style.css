@@ -212,10 +212,8 @@ nav {
 }
 
 #to-skills {
-    display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: 64px 0;
 }
 
 #to-skills button img {
@@ -284,10 +282,8 @@ nav {
 }
 
 #to-portfolio {
-    display: flex;
     justify-content: flex-start;
     width: 100%;
-    padding: 64px 0;
 }
 
 #to-portfolio button img {

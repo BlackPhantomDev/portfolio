@@ -50,6 +50,13 @@ a:hover {
     padding: 12px 72px;
 }
 
+.arrow-to-next-section {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    padding: 64px 0;
+}
+
 .go-to-next-section {
     all: unset;
     display: flex;
