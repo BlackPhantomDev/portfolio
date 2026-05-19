@@ -14,6 +14,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--background-color);
+    z-index: 1000;
 }
 
 nav {
@@ -292,6 +293,7 @@ nav {
 
 #portfolio {
     width: 100%;
+    max-width: 1440px;
 }
 
 #portfolio-wrapper {
@@ -328,6 +330,7 @@ nav {
     filter: grayscale(100%);
     transition: filter .2s ease-in-out;
     cursor: pointer;
+    margin-top: 32px;
 }
 
 .portfolio-project-preview:hover {
@@ -339,6 +342,70 @@ nav {
     font-size: 48px;
     font-family: Syne;
     font-weight: bold;
+}
+
+#references {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    padding-top: 96px;
+}
+
+#references-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+}
+
+.reference {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid black;
+    width: 500px;
+    padding: 12px;
+    gap: 16px;
+    transition: all .2s ease-in-out;
+}
+
+.reference:hover {
+    border: 5px solid var(--highlighted);
+    transition: all .2s ease-in-out;
+}
+
+.reference-icon {
+    width: 40px; 
+    height: 40px;
+    background-color: black;
+    mask-image: url('/assets/icons/partner-comment.svg');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url('/assets/icons/partner-comment.svg');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+.reference:hover .reference-icon {
+    background-color: #00BC8F;
+}
+
+.reference-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {

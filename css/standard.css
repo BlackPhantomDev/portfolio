@@ -55,6 +55,7 @@ a:hover {
     align-items: center;
     height: 350px;
     padding: 64px 0;
+    max-width: 1440px;
 }
 
 .go-to-next-section {
