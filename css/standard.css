@@ -7,13 +7,14 @@
 :root {
     --background-color: #FFFCF3;
     --highlighted: #00BC8F;
+    --diag: 130px;
 }
 
 html {
     background-color: var(--background-color);
 }
 
-.hightlighted-text {
+.highlighted-text {
     color: var(--highlighted);
 }
 
@@ -53,9 +54,10 @@ a:hover {
 .arrow-to-next-section {
     display: flex;
     align-items: center;
-    height: 350px;
-    padding: 64px 0;
+    height: 150px;
+    margin: 64px 0;
     max-width: 1440px;
+    cursor: pointer;
 }
 
 .go-to-next-section {
@@ -66,6 +68,11 @@ a:hover {
     width: 150px;
     height: 150px;
     cursor: pointer;
+    transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.arrow-to-next-section:hover .go-to-next-section {
+    transform: translateY(12px);
 }
 
 h1 {
