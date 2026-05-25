@@ -1,0 +1,344 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+    background-color: black;
+    font-family: SourceSans3;
+}
+
+#inner-footer-wrapper {
+    width: 100%;
+    max-width: 1920px;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+    padding: 72px 64px 56px 64px;
+}
+
+#footer-title {
+    font-weight: 900;
+    margin: 0 0 40px;
+    letter-spacing: -1px;
+}
+
+#contact-form-wrapper form {
+    max-width: 620px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#contact-form-wrapper h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 8px;
+    font-weight: 800;
+}
+
+#contact-form-wrapper form > p {
+    text-align: center;
+    margin: 0 0 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 28px;
+    width: 100%;
+}
+
+.form-field input,
+.form-field textarea {
+    all: unset;
+    width: 100%;
+    background: black;
+    border: 1px solid transparent;
+    border-bottom-color: #fff;  
+    border-radius: 2px;
+    color: #fff;
+    padding: 18px 50px 18px 16px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 170px;
+    padding-top: 22px;
+}
+
+.form-field label {
+    position: absolute;
+    top: 48%;
+    left: 14px;
+    transform: translateY(-100%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    padding: 0 4px;
+    background: transparent;
+    transition: all 0.18s ease;
+}
+
+.form-field-textarea label {
+    top: 22px;
+    transform: none;
+}
+
+.form-field input:focus ~ label,
+.form-field input:not(:placeholder-shown) ~ label,
+.form-field textarea:focus ~ label,
+.form-field textarea:not(:placeholder-shown) ~ label {
+    top: 0;
+    transform: translateY(-50%) scale(0.85);
+    transform-origin: left center;
+    background: #000;
+    color: #5FE3C9;
+}
+
+.form-field-textarea input:focus ~ label,
+.form-field-textarea textarea:focus ~ label,
+.form-field-textarea textarea:not(:placeholder-shown) ~ label {
+    transform: translateY(-50%) scale(0.85);
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: #fff;
+}
+
+.field-icon {
+    position: absolute;
+    top: 47%;
+    right: 14px;
+    transform: translateY(-100%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form-field-textarea .field-icon {
+    top: 22px;
+    transform: none;
+}
+
+.field-error {
+    display: block;
+    visibility: hidden;
+    color: #ff4d6a;
+    font-size: 16px;
+    margin-top: 6px;
+    padding-left: 4px;
+}
+
+.form-field.is-invalid .field-error {
+    visibility: visible;
+}
+
+.form-field.is-invalid input,
+.form-field.is-invalid textarea {
+    border-color: #ff4d6a;
+}
+
+.form-field.is-invalid input:focus ~ label,
+.form-field.is-invalid input:not(:placeholder-shown) ~ label,
+.form-field.is-invalid textarea:focus ~ label,
+.form-field.is-invalid textarea:not(:placeholder-shown) ~ label {
+    color: #ff4d6a;
+}
+
+.form-field.is-invalid .field-icon {
+    display: flex;
+    background: #ff4d6a;
+}
+.form-field.is-invalid .field-icon::after { content: "!"; }
+
+.form-field.is-invalid .field-error {
+    display: block;
+}
+
+#form-check-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 16px;
+}
+
+#contact-form-wrapper input[type="checkbox"] {
+    accent-color: #5FE3C9;
+    margin: 28px 8px 0 0;
+    vertical-align: middle;
+    width: auto;
+    cursor: pointer;
+}
+
+#contact-form-wrapper label[for="accept-privacy-policy"] {
+    margin: 28px 0 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+#accept-privacy-policy-label {
+    display: flex;
+}
+
+#accept-privacy-link {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    text-align: center;
+}
+
+#accept-privacy-link:hover {
+    font-weight: 800;
+}
+
+#form-captcha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#submit-form {
+    align-self: center;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 40px;
+    font-size: 16px;
+    margin-top: 36px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .2s ease-in-out;
+}
+
+#submit-form.disabled {
+    border-color: #ffffff85;
+    color: #ffffff85;
+    cursor: default;
+}
+
+#submit-form.disabled:hover {
+    padding: 12px 40px;
+}
+
+#submit-form:hover {
+    padding: 12px 72px;
+}
+
+#arrow-back-to-top {
+    position: absolute;
+    right: 64px;
+    bottom: 200px;
+    cursor: pointer;
+}
+
+#arrow-back-to-top svg {
+    transform: rotate(180deg);
+    width: 32px;
+    height: auto;
+}
+
+#arrow-back-to-top svg path {
+    stroke: #fff;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 80px;
+}
+
+#footer-links-left {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+#footer-links-left img {
+    width: 56px;
+    height: auto;
+    display: block;
+    margin-bottom: 6px;
+}
+
+#footer-links-left p {
+    font-size: 22px;
+}
+
+#footer-links-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+#footer-links-right-icons {
+    display: flex;
+    gap: 56px;
+}
+
+#footer-links-right-icons a:hover {
+    margin-top: -24px;
+}
+
+#footer-links-right-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+#footer-legal-links {
+    display: flex;
+    gap: 24px;
+}
+
+#footer-legal-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    transition: all .2s ease;
+}
+
+#footer-legal-links a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    width: 70%;
+    height: 2px;
+    background-color: var(--highlighted);
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: all .2s ease-in-out;
+}
+
+#footer-legal-links a:hover {
+    margin-right: -8px;
+    transition: all .2s ease-in-out;
+}
+
+#footer-legal-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
