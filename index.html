@@ -183,31 +183,38 @@
                 </svg>
             </button>
         </div>
-
+ 
         <footer>
             <div id="inner-footer-wrapper">
                 <h2 id="footer-title">Say Hi!</h2>
-                <div id="contact-form">
-                    <form action="">
+                <div id="contact-form-wrapper">
+                    <form action="https://sd.mischasiegrist.ch/mailer.php" id="contact-form" novalidate onsubmit="return false;">
                         <h3 class="highlighted-text">Want to discouss a new project?</h3>
                         <p>Say hello! Let's discuss your ideas and make it happen</p>
 
                         <div class="form-field">
-                            <input type="text" id="form-name" name="name" placeholder=" " required>
+                            <input type="text" id="form-name" name="name" maxlength="100" placeholder=" " required>
                             <label for="form-name">Your name</label>
                             <span class="field-icon"></span>
                             <span class="field-error">Your name is required</span>
                         </div>
 
                         <div class="form-field">
-                            <input type="email" id="form-email" name="email" placeholder=" " required>
+                            <input type="email" id="form-email" name="email" maxlength="254" placeholder=" " required>
                             <label for="form-email">Your email</label>
                             <span class="field-icon"></span>
                             <span class="field-error">Please enter a valid email</span>
                         </div>
 
+                        <div class="form-field">
+                            <input type="text" id="form-subject" name="subject" maxlength="200" placeholder=" " required>
+                            <label for="form-subject">Your subject</label>
+                            <span class="field-icon"></span>
+                            <span class="field-error">Please enter subject</span>
+                        </div>
+
                         <div class="form-field form-field-textarea">
-                            <textarea id="form-text" rows="6" name="message" placeholder=" " required></textarea>
+                            <textarea id="form-text" rows="6" name="message" maxlength="5000" placeholder=" " required></textarea>
                             <label for="form-text">Your message</label>
                             <span class="field-icon"></span>
                             <span class="field-error">Your message is empty</span>
@@ -217,8 +224,20 @@
                             <input type="checkbox" name="accept" id="accept-privacy-policy" required>
                             <label for="accept-privacy-policy" id="accept-privacy-policy-label">I've read the <a href="privacy.html" id="accept-privacy-link" class="highlighted-text">privacy policy</a> and agree to the processing of my data as outlined.</label>
                         </div>
+                        <br><br>
+                        <div id="form-captcha">
+                            <div class="h-captcha" data-sitekey="ebba1710-83a6-4e3e-b424-677cc038ed60"></div>
+                        </div>
+                        <br><br>
+                        <div id="form-errors">
 
-                        <input class="primary-btn disabled" type="button" value="Send message" name="submit" id="submit-form" type="submit">
+                        </div>
+                        <div id="form-success" hidden>
+                            Vielen Dank! Ihre Nachricht wurde gesendet. Ich melde mich so bald wie m&ouml;glich bei Ihnen.
+                        </div>
+                        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+                        <input class="primary-btn disabled" id="submit-form" value="Send message" name="submit" type="submit" />
                     </form>
                     <span id="arrow-back-to-top">
                         <svg width="53" height="95" viewBox="0 0 53 95" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,6 +266,7 @@
            
         </footer>
     </body>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <script src="./script.js"></script>
 </html>
     
