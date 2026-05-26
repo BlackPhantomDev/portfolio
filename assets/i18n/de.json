@@ -54,6 +54,7 @@
     "privacyLink": "Datenschutzerklärung",
     "submit": "Nachricht senden",
     "sending": "Wird gesendet…",
+    "cooldown": "Bitte warte {seconds}...",
     "success": "Danke für deine Nachricht! Ich melde mich so schnell wie möglich bei dir.",
     "errors": {
       "generic": "Hoppla, etwas ist schiefgelaufen. Bitte versuche es später erneut.",

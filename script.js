@@ -13,6 +13,8 @@ const STORAGE_PREFIX = 'contactForm_';
 const COOLDOWN_SECONDS = 30;
 let cooldownInterval = null;
 
+const tx = (key, fallback) => (typeof t === 'function' && t(key)) || fallback;
+
 function init() {
     footerYear.innerText = date.getFullYear();
     restoreFormData();
@@ -89,7 +91,7 @@ async function submitForm(e) {
     if (submitBtn.classList.contains('disabled')) return;
     e.preventDefault();
     hideFormMessages();
-    submitBtn.value = 'Sending...';
+    submitBtn.value = tx('contact.sending', 'Sending...');
     try {
         const result = await sendFormData();
         if (!result.success) throw new Error(result.error || 'Versand fehlgeschlagen.');
@@ -100,7 +102,7 @@ async function submitForm(e) {
     } finally {
         if (!cooldownInterval) {
             submitBtn.classList.add('disabled');
-            submitBtn.value = 'Send message';
+            submitBtn.value = tx('contact.submit', 'Send message');
         }
     }
 }
@@ -151,17 +153,17 @@ submitBtn.addEventListener('click', submitForm);
 function startCooldown() {
     let remaining = COOLDOWN_SECONDS;
     submitBtn.classList.add('disabled');
-    submitBtn.value = `Wait ${remaining}s...`;
+    submitBtn.value = tx('contact.cooldown', `Wait ${remaining}s...`).replace('{seconds}', remaining);
 
     cooldownInterval = setInterval(() => {
         remaining--;
         if (remaining <= 0) {
             clearInterval(cooldownInterval);
             cooldownInterval = null;
-            submitBtn.value = 'Send message';
+            submitBtn.value = tx('contact.submit', 'Send message');
             updateSubmitButton();
         } else {
-            submitBtn.value = `Wait ${remaining}s...`;
+            submitBtn.value = tx('contact.cooldown', `Wait ${remaining}s...`).replace('{seconds}', remaining);
         }
     }, 1000);
 }

@@ -54,6 +54,7 @@
     "privacyLink": "privacy policy",
     "submit": "Send message",
     "sending": "Sending…",
+    "cooldown": "Please wait {seconds}...",
     "success": "Thanks for your message! I will reply as soon as possible.",
     "errors": {
       "generic": "Oops, something went wrong. Please try again later.",
