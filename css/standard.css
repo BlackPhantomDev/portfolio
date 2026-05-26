@@ -90,7 +90,9 @@ h2:hover {
     cursor: default;
 }
 h3 {
-    font-size: 28px;
+    font-size: 42px;
+    font-weight: 800;
+    font-family: Syne;
 }
 h4 {
     font-size: 20px;
