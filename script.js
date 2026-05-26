@@ -115,7 +115,10 @@ async function sendFormData() {
     try {
         return JSON.parse(text);
     } catch {
-        throw new Error('Server-Fehler. Bitte später erneut versuchen.');
+        if (!result.success) {
+            currentError = { backend: result.error };
+            throw new Error(mapBackendError(result.error));
+        }
     }
 }
 
