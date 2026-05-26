@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Portfolio | First Name",
+    "logoAlt": "Logo"
+  },
+  "hero": {
+    "titleHtml": "Frontend<br>Developer",
+    "subtitle": "First Name",
+    "scrollDownHtml": "Scroll<br>nach unten",
+    "scrollArrowAlt": "Scrollpfeil"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Schreibe hier ein paar Informationen über dich mit IT-Bezug. Warum brennst du für das Coden? Zeige Lust, neue Technologien zu lernen.<br>Ergänze eine kurze Beschreibung deines Problemlösungsansatzes. Du kannst Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamfähigkeit nennen.",
+    "houseIconAlt": "Haus-Icon",
+    "location": "Standort: ",
+    "laptopIconAlt": "Laptop-Icon",
+    "remote": "Offen für Remote-Arbeit",
+    "cta": "Lass uns reden",
+    "portraitAlt": "Portrait"
+  },
+  "skills": {
+    "title": "Meine Skills",
+    "openToLearnIconAlt": "Lernbereit-Icon",
+    "openToLearnHtml": "Skill nicht dabei? <a class=\"highlighted-text\" href=\"#contact\" data-i18n=\"skills.contactLink\">Kontaktiere mich</a> – ich lerne ständig dazu!",
+    "contactLink": "Kontaktiere mich"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Hier findest du eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Skills in Aktion zu sehen.",
+    "previewAlt": "Projekt-Vorschau"
+  },
+  "references": {
+    "title": "Referenzen",
+    "description": "Ich arbeite gerne eigenständig und im Team. Hier ist, was meine Kolleg:innen über die Zusammenarbeit mit mir sagen.",
+    "person1Role": "Fullstack-Entwickler",
+    "person2Role": "Team-Partner",
+    "person3Role": "Fullstack-Entwickler",
+    "lorem": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?"
+  },
+  "contact": {
+    "footerTitle": "Sag Hallo!",
+    "formHeading": "Lust auf ein neues Projekt?",
+    "formIntro": "Schreib mir! Lass uns deine Ideen besprechen und Wirklichkeit werden lassen.",
+    "nameLabel": "Dein Name",
+    "nameError": "Bitte gib deinen Namen ein",
+    "emailLabel": "Deine E-Mail",
+    "emailError": "Bitte gib eine gültige E-Mail-Adresse ein",
+    "subjectLabel": "Dein Betreff",
+    "subjectError": "Bitte gib einen Betreff ein",
+    "messageLabel": "Deine Nachricht",
+    "messageError": "Deine Nachricht ist leer",
+    "privacyLabelHtml": "Ich habe die <a href=\"privacy.html\" id=\"accept-privacy-link\" class=\"highlighted-text\" data-i18n=\"contact.privacyLink\">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "privacyLink": "Datenschutzerklärung",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet…",
+    "success": "Danke für deine Nachricht! Ich melde mich so schnell wie möglich bei dir.",
+    "errors": {
+      "generic": "Hoppla, etwas ist schiefgelaufen. Bitte versuche es später erneut.",
+      "network": "Verbindungsfehler. Bitte prüfe deine Internetverbindung.",
+      "rateLimit": "Bitte warte einen Moment, bevor du erneut sendest.",
+      "captchaMissing": "Bitte bestätige das Captcha.",
+      "captchaUnreachable": "Captcha-Server gerade nicht erreichbar. Bitte später erneut versuchen.",
+      "captchaFailed": "Captcha-Prüfung fehlgeschlagen. Bitte versuche es erneut.",
+      "nameShort": "Bitte gib deinen Namen ein.",
+      "nameLong": "Dein Name ist zu lang.",
+      "emailMissing": "Bitte gib deine E-Mail-Adresse ein.",
+      "emailLong": "Deine E-Mail-Adresse ist zu lang.",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "subjectShort": "Bitte gib einen Betreff ein.",
+      "subjectLong": "Dein Betreff ist zu lang.",
+      "messageShort": "Deine Nachricht ist zu kurz.",
+      "messageLong": "Deine Nachricht ist zu lang.",
+      "phoneInvalid": "Ungültige Telefonnummer.",
+      "configMissing": "Server-Konfigurationsfehler. Bitte später erneut versuchen.",
+      "methodNotAllowed": "Methode nicht erlaubt.",
+      "sendFailed": "Versand fehlgeschlagen. Bitte später erneut versuchen."
+    }
+  },
+  "footer": {
+    "copyright": "© First Name",
+    "logoAlt": "Logo",
+    "githubAlt": "GitHub-Icon",
+    "mailAlt": "Mail-Icon",
+    "xingAlt": "Xing-Icon",
+    "legal": "Impressum"
+  }
+}

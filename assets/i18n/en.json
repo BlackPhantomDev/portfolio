@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Portfolio | First Name",
+    "logoAlt": "Logo"
+  },
+  "hero": {
+    "titleHtml": "Frontend<br>Developer",
+    "subtitle": "First Name",
+    "scrollDownHtml": "Scroll<br>Down",
+    "scrollArrowAlt": "Scroll arrow"
+  },
+  "about": {
+    "title": "About me",
+    "description": "Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.<br>Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.",
+    "houseIconAlt": "House icon",
+    "location": "Based in ",
+    "laptopIconAlt": "Laptop icon",
+    "remote": "Open to work remote",
+    "cta": "Let's talk",
+    "portraitAlt": "Portrait"
+  },
+  "skills": {
+    "title": "My skills",
+    "openToLearnIconAlt": "Open to learn icon",
+    "openToLearnHtml": "Don't see the skill you need? <a class=\"highlighted-text\" href=\"#contact\" data-i18n=\"skills.contactLink\">Contact me</a> – I'm always ready to learn!",
+    "contactLink": "Contact me"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Explore a selection of my work here – interact with projects to see my skills in action.",
+    "previewAlt": "Project preview"
+  },
+  "references": {
+    "title": "References",
+    "description": "I thrive both independently and as part of a team. Here's what my colleagues have to say about working with me.",
+    "person1Role": "Fullstack Developer",
+    "person2Role": "Team Partner",
+    "person3Role": "Fullstack Developer",
+    "lorem": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?"
+  },
+  "contact": {
+    "footerTitle": "Say Hi!",
+    "formHeading": "Want to discuss a new project?",
+    "formIntro": "Say hello! Let's discuss your ideas and make it happen.",
+    "nameLabel": "Your name",
+    "nameError": "Your name is required",
+    "emailLabel": "Your email",
+    "emailError": "Please enter a valid email",
+    "subjectLabel": "Your subject",
+    "subjectError": "Please enter a subject",
+    "messageLabel": "Your message",
+    "messageError": "Your message is empty",
+    "privacyLabelHtml": "I've read the <a href=\"privacy.html\" id=\"accept-privacy-link\" class=\"highlighted-text\" data-i18n=\"contact.privacyLink\">privacy policy</a> and agree to the processing of my data as outlined.",
+    "privacyLink": "privacy policy",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Thanks for your message! I will reply as soon as possible.",
+    "errors": {
+      "generic": "Oops, something went wrong. Please try again later.",
+      "network": "Connection error. Please check your internet connection.",
+      "rateLimit": "Please wait a moment before sending again.",
+      "captchaMissing": "Please complete the captcha.",
+      "captchaUnreachable": "Captcha server is currently unreachable. Please try again later.",
+      "captchaFailed": "Captcha verification failed. Please try again.",
+      "nameShort": "Please enter your name.",
+      "nameLong": "Your name is too long.",
+      "emailMissing": "Please enter your email address.",
+      "emailLong": "Your email address is too long.",
+      "emailInvalid": "Please enter a valid email address.",
+      "subjectShort": "Please enter a subject.",
+      "subjectLong": "Your subject is too long.",
+      "messageShort": "Your message is too short.",
+      "messageLong": "Your message is too long.",
+      "phoneInvalid": "Invalid phone number.",
+      "configMissing": "Server configuration error. Please try again later.",
+      "methodNotAllowed": "Method not allowed.",
+      "sendFailed": "Sending failed. Please try again later."
+    }
+  },
+  "footer": {
+    "copyright": "© First Name",
+    "logoAlt": "Logo",
+    "githubAlt": "GitHub icon",
+    "mailAlt": "Mail icon",
+    "xingAlt": "Xing icon",
+    "legal": "Legal notice"
+  }
+}

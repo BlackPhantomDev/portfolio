@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en" data-i18n-title="meta.title">
     <head>
         <meta charset="UTF-8">
+        <script src="./js/early-lang.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio | Mischa Siegrist </title>
+        <title>Portfolio | First Name </title>
         <link rel="stylesheet" href="./main.css">
         <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
     </head>
@@ -13,7 +14,7 @@
             <nav>
                 <div id="nav-left">
                     <div id="nav-logo-container">
-                        <img id="nav-logo" src="./assets/img/logo.svg" alt="Logo">
+                        <img id="nav-logo" src="./assets/img/logo.svg" alt="Logo" data-i18n-attr="alt:meta.logoAlt">
                     </div>
                 </div>
                 <div id="nav-right">
@@ -30,38 +31,44 @@
             </nav>
         </header>
 
-        <main id="hero">            
-            <h1>Frontend<br>Developer</h1>
+        <main id="hero">
+            <h1 data-i18n-html="hero.titleHtml">Frontend<br>Developer</h1>
             <div id="hero-subtitle-with-spacer">
                 <span id="hero-spacer"></span>
-                <h3 id="hero-subtitle" class="highlighted-text">First Name</h3>
+                <h3 id="hero-subtitle" class="highlighted-text" data-i18n="hero.subtitle">First Name</h3>
             </div>
 
             <div id="hero-empty-space">
-                <a class="vertical-text" href="mailto:info@mischasiegrist.ch">info@mail</a>
+                <a class="vertical-text" href="mailto:info@firstname.com">info@mail</a>
 
                 <div id="scroll-down">
-                    <img id="scroll-arrow" src="./assets/icons/arrow.svg" alt="Scroll Arrow">
-                    <span>Scroll<br>Down</span>
+                    <img id="scroll-arrow" src="./assets/icons/arrow.svg" alt="Scroll Arrow" data-i18n-attr="alt:hero.scrollArrowAlt">
+                    <span data-i18n-html="hero.scrollDownHtml">Scroll<br>Down</span>
                 </div>
             </div>
         </main>
 
         <section id="about">
-            <h2>About me</h2>
+            <h2 data-i18n="about.title">About me</h2>
             <div id="about-wrapper">
                 <div id="about-left">
-                    <p>Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.<br>Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.</p>
+                    <p data-i18n-html="about.description">Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.<br>Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.</p>
                     <div id="about-details">
-                        <p><img src="./assets/icons/house.svg" alt="House icon"><span>Based in </span></p>
-                        <p><img src="./assets/icons/laptop.svg" alt="Laptop icon"><span>Open to work Remote</span></p>
+                        <p>
+                            <img src="./assets/icons/house.svg" alt="House icon" data-i18n-attr="alt:about.houseIconAlt">
+                            <span data-i18n="about.location">Based in </span>
+                        </p>
+                        <p>
+                            <img src="./assets/icons/laptop.svg" alt="Laptop icon" data-i18n-attr="alt:about.laptopIconAlt">
+                            <span data-i18n="about.remote">Open to work Remote</span>
+                        </p>
                     </div>
                     <div id="about-contact-btn">
-                        <button class="primary-btn">Let's talk</button>
+                        <button class="primary-btn" data-i18n="about.cta">Let's talk</button>
                     </div>
                 </div>
                 <div id="about-right">
-                    <img src="./assets/img/portrait.png" alt="Portrait">
+                    <img src="./assets/img/portrait.png" alt="Portrait" data-i18n-attr="alt:about.portraitAlt">
                 </div>
             </div>
         </section>
@@ -74,7 +81,7 @@
 
         <section id="skills">
             <div id="skills-wrapper">
-                <h2 id="skills-wrapper-title">My skills</h2>
+                <h2 id="skills-wrapper-title" data-i18n="skills.title">My skills</h2>
                 <div id="skill-grid">
                     <div class="skill">
                         <img src="./assets/icons/html.svg" alt="HTML Logo icon" />
@@ -106,8 +113,8 @@
                     </div>
                 </div>
                 <div id="skill-open-to-learn">
-                    <img src="./assets/icons/open-to-learn.svg" alt="Open to learn icon">
-                    <p>Don't see the skill you need? <a class="highlighted-text" href="#contact">Contact me</a> I'm always ready to learn!</p>
+                    <img src="./assets/icons/open-to-learn.svg" alt="Open to learn icon" data-i18n-attr="alt:skills.openToLearnIconAlt">
+                    <p data-i18n-html="skills.openToLearnHtml">Don't see the skill you need? <a class="highlighted-text" href="#contact">Contact me</a> I'm always ready to learn!</p>
                 </div>
             </div>
         </section>
@@ -121,19 +128,19 @@
         <section id="portfolio">
             <div id="portfolio-wrapper">
                 <div id="portfolio-header">
-                    <h2>Portfolio</h2>
-                    <p id="portfolio-description">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+                    <h2 data-i18n="portfolio.title">Portfolio</h2>
+                    <p id="portfolio-description" data-i18n="portfolio.description">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
                 </div>
                 <div class="portfolio-project">
-                    <img class="portfolio-project-preview" src="./assets/img/pokedex-preview.png" alt="Project Preview Picture">
+                    <img class="portfolio-project-preview" src="./assets/img/pokedex-preview.png" alt="Project Preview Picture" data-i18n-attr="alt:portfolio.previewAlt">
                     <span class="portfolio-project-counter">01/03</span>
                 </div>
                 <div class="portfolio-project">
                     <span class="portfolio-project-counter">02/03</span>
-                    <img class="portfolio-project-preview" src="./assets/img/pokedex-preview.png" alt="Project Preview Picture">
+                    <img class="portfolio-project-preview" src="./assets/img/pokedex-preview.png" alt="Project Preview Picture" data-i18n-attr="alt:portfolio.previewAlt">
                 </div>
                 <div class="portfolio-project">
-                    <img class="portfolio-project-preview" src="./assets/img/pokedex-preview.png" alt="Project Preview Picture">
+                    <img class="portfolio-project-preview" src="./assets/img/pokedex-preview.png" alt="Project Preview Picture" data-i18n-attr="alt:portfolio.previewAlt">
                     <span class="portfolio-project-counter">03/03</span>
                 </div>
             </div>
@@ -141,34 +148,34 @@
 
         <section id="references">
             <div id="references-header">
-                <h2>Refrences</h2>
-                <p>I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.</p>
+                <h2 data-i18n="references.title">Refrences</h2>
+                <p data-i18n="references.description">I thrive both independently and as part of a team. Here's what my colleagues have to say about working with me.</p>
             </div>
             <div id="references-grid">
                 <div class="reference">
                     <div class="reference-icon"></div>
                     <div class="reference-name">
                         <h4>M. Mustermann</h4>
-                        <span>Fullstack Developer</span>
+                        <span data-i18n="references.person1Role">Fullstack Developer</span>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
+                    <p data-i18n="references.lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
                 </div>
                 <div class="reference">
                     <div class="reference-icon"></div>
                     <div class="reference-name">
                         <h4>J. Doe</h4>
-                        <span>Team Partner</span>
+                        <span data-i18n="references.person2Role">Team Partner</span>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
+                    <p data-i18n="references.lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
+                    <p data-i18n="references.lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
                 </div>
                 <div class="reference">
                     <div class="reference-icon"></div>
                     <div class="reference-name">
                         <h4>M. Mustermann</h4>
-                        <span>Fullstack Developer</span>
+                        <span data-i18n="references.person3Role">Fullstack Developer</span>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
+                    <p data-i18n="references.lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?</p>
                 </div>
             </div>
         </section>
@@ -181,46 +188,46 @@
                 </svg>
             </button>
         </div>
- 
+
         <footer>
             <div id="inner-footer-wrapper">
-                <h2 id="footer-title">Say Hi!</h2>
+                <h2 id="footer-title" data-i18n="contact.footerTitle">Say Hi!</h2>
                 <div id="contact-form-wrapper">
                     <form action="https://sd.mischasiegrist.ch/mailer.php" id="contact-form" novalidate onsubmit="return false;">
-                        <h3 class="highlighted-text">Want to discouss a new project?</h3>
-                        <p>Say hello! Let's discuss your ideas and make it happen</p>
+                        <h3 class="highlighted-text" data-i18n="contact.formHeading">Want to discouss a new project?</h3>
+                        <p data-i18n="contact.formIntro">Say hello! Let's discuss your ideas and make it happen</p>
 
                         <div class="form-field">
                             <input type="text" id="form-name" name="name" maxlength="100" placeholder=" " required>
-                            <label for="form-name">Your name</label>
+                            <label for="form-name" data-i18n="contact.nameLabel">Your name</label>
                             <span class="field-icon"></span>
-                            <span class="field-error">Your name is required</span>
+                            <span class="field-error" data-i18n="contact.nameError">Your name is required</span>
                         </div>
 
                         <div class="form-field">
                             <input type="email" id="form-email" name="email" maxlength="254" placeholder=" " required>
-                            <label for="form-email">Your email</label>
+                            <label for="form-email" data-i18n="contact.emailLabel">Your email</label>
                             <span class="field-icon"></span>
-                            <span class="field-error">Please enter a valid email</span>
+                            <span class="field-error" data-i18n="contact.emailError">Please enter a valid email</span>
                         </div>
 
                         <div class="form-field">
                             <input type="text" id="form-subject" name="subject" maxlength="200" placeholder=" " required>
-                            <label for="form-subject">Your subject</label>
+                            <label for="form-subject" data-i18n="contact.subjectLabel">Your subject</label>
                             <span class="field-icon"></span>
-                            <span class="field-error">Please enter subject</span>
+                            <span class="field-error" data-i18n="contact.subjectError">Please enter subject</span>
                         </div>
 
                         <div class="form-field form-field-textarea">
                             <textarea id="form-text" rows="6" name="message" maxlength="5000" placeholder=" " required></textarea>
-                            <label for="form-text">Your message</label>
+                            <label for="form-text" data-i18n="contact.messageLabel">Your message</label>
                             <span class="field-icon"></span>
-                            <span class="field-error">Your message is empty</span>
+                            <span class="field-error" data-i18n="contact.messageError">Your message is empty</span>
                         </div>
 
                         <div id="form-check-section">
                             <input type="checkbox" name="accept" id="accept-privacy-policy" required>
-                            <label for="accept-privacy-policy" id="accept-privacy-policy-label">I've read the <a href="privacy.html" id="accept-privacy-link" class="highlighted-text">privacy policy</a> and agree to the processing of my data as outlined.</label>
+                            <label for="accept-privacy-policy" id="accept-privacy-policy-label" data-i18n-html="contact.privacyLabelHtml">I've read the <a href="privacy.html" id="accept-privacy-link" class="highlighted-text">privacy policy</a> and agree to the processing of my data as outlined.</label>
                         </div>
                         <br><br>
                         <div id="form-captcha">
@@ -230,12 +237,12 @@
                         <div id="form-errors">
 
                         </div>
-                        <div id="form-success" hidden>
-                            Vielen Dank! Ihre Nachricht wurde gesendet. Ich melde mich so bald wie m&ouml;glich bei Ihnen.
+                        <div id="form-success" hidden data-i18n="contact.success">
+                            Thanks for your message! I will reply you as soon as posible.
                         </div>
                         <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
 
-                        <input class="primary-btn disabled" id="submit-form" value="Send message" name="submit" type="submit" />
+                        <input class="primary-btn disabled" id="submit-form" value="Send message" name="submit" type="submit" data-i18n-attr="value:contact.submit" />
                     </form>
                     <span id="arrow-back-to-top">
                         <svg width="53" height="95" viewBox="0 0 53 95" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,25 +253,25 @@
                 </div>
                 <div id="footer-links">
                     <div id="footer-links-left">
-                        <img src="./assets/img/logo-footer.svg" alt="Logo">
-                        <p>© Mischa Siegrist <span id="footer-year"></span></p>
+                        <img src="./assets/img/logo-footer.svg" alt="Logo" data-i18n-attr="alt:footer.logoAlt">
+                        <p><span data-i18n="footer.copyright">© First Name</span> <span id="footer-year"></span></p>
                     </div>
                     <div id="footer-links-right">
                         <div id="footer-links-right-icons">
-                            <a href="https://github.com/BlackPhantomDev"><img src="./assets/icons/github.svg" alt="GitHub Icon"></a>
-                            <a href="mailto:info@mischasiegrist.ch"><img src="./assets/icons/mail.svg" alt="Mail Icon"></a>
-                            <a href="https://www.xing.com/profile/Mischa_Siegrist039383"><img src="./assets/icons/xing.svg" alt="Xing Icon"></a>
+                            <a href="https://github.com/BlackPhantomDev"><img src="./assets/icons/github.svg" alt="GitHub Icon" data-i18n-attr="alt:footer.githubAlt"></a>
+                            <a href="mailto:info@firstname.com"><img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-attr="alt:footer.mailAlt"></a>
+                            <a href="https://www.xing.com/profile/"><img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-attr="alt:footer.xingAlt"></a>
                         </div>
                         <div id="footer-legal-links">
-                            <a href="./legal.html">Legal notice</a>
+                            <a href="./legal.html" data-i18n="footer.legal">Legal notice</a>
                         </div>
                     </div>
                 </div>
             </div>
-           
+
         </footer>
     </body>
     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script src="./js/i18n.js"></script>
     <script src="./script.js"></script>
 </html>
-    
