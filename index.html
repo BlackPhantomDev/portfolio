@@ -39,7 +39,7 @@
             </div>
 
             <div id="hero-empty-space">
-                <a class="vertical-text" href="mailto:info@firstname.com">info@mail</a>
+                <a class="vertical-text" href="mailto:info@mischasiegrist.ch">info@mischasiegrist.ch</a>
 
                 <div id="scroll-down">
                     <img id="scroll-arrow" src="./assets/icons/arrow.svg" alt="Scroll Arrow" data-i18n-attr="alt:hero.scrollArrowAlt">
@@ -56,7 +56,7 @@
                     <div id="about-details">
                         <p>
                             <img src="./assets/icons/house.svg" alt="House icon" data-i18n-attr="alt:about.houseIconAlt">
-                            <span data-i18n="about.location">Based in </span>
+                            <span data-i18n="about.location">Based in Interlaken</span>
                         </p>
                         <p>
                             <img src="./assets/icons/laptop.svg" alt="Laptop icon" data-i18n-attr="alt:about.laptopIconAlt">
@@ -64,7 +64,7 @@
                         </p>
                     </div>
                     <div id="about-contact-btn">
-                        <button class="primary-btn" data-i18n="about.cta">Let's talk</button>
+                        <button class="primary-btn" ><a href="#contact" data-i18n="about.cta">Let's talk</a></button>
                     </div>
                 </div>
                 <div id="about-right">
@@ -83,35 +83,78 @@
             <div id="skills-wrapper">
                 <h2 id="skills-wrapper-title" data-i18n="skills.title">My skills</h2>
                 <div id="skill-grid">
-                    <div class="skill">
-                        <img src="./assets/icons/html.svg" alt="HTML Logo icon" />
-                        <span>HTML</span>
+                    <div id="skill-grid">
+                        <div class="skill">
+                            <div class="skill-icon-scene">
+                                <div class="skill-icon-mask">
+                                    <div class="skill-icon-rotator">
+                                        <img src="./assets/icons/html.svg" alt="HTML Logo icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-icon-scene">
+                                <div class="skill-icon-mask">
+                                    <div class="skill-icon-rotator">
+                                        <img src="./assets/icons/css.svg" alt="CSS Logo icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-icon-scene">
+                                <div class="skill-icon-mask">
+                                    <div class="skill-icon-rotator">
+                                        <img src="./assets/icons/javascript.svg" alt="JavaScript Logo icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-icon-scene">
+                                <div class="skill-icon-mask">
+                                    <div class="skill-icon-rotator">
+                                        <img src="./assets/icons/git.svg" alt="Git Logo icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-icon-scene">
+                                <div class="skill-icon-mask">
+                                    <div class="skill-icon-rotator">
+                                        <img src="./assets/icons/firebase.png" alt="Firebase Logo icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-icon-scene">
+                                <div class="skill-icon-mask">
+                                    <div class="skill-icon-rotator">
+                                        <img src="./assets/icons/rest-api.svg" alt="API icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span>API</span>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-icon-scene">
+                                <div class="skill-icon-mask">
+                                    <div class="skill-icon-rotator">
+                                        <img src="./assets/icons/scrum.svg" alt="Scrum icon" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span>Scrum</span>
+                        </div>
                     </div>
-                    <div class="skill">
-                        <img src="./assets/icons/css.svg" alt="CSS Logo icon" />
-                        <span>CSS</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./assets/icons/javascript.svg" alt="JavaScript Logo icon" />
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./assets/icons/git.svg" alt="Git Logo icon" />
-                        <span>Git</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./assets/icons/firebase.png" alt="Firebase Logo icon" />
-                        <span>Firebase</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./assets/icons/rest-api.svg" alt="API icon" />
-                        <span>API</span>
-                    </div>
-                    <div class="skill">
-                        <img src="./assets/icons/scrum.svg" alt="Scrum icon" />
-                        <span>Scrum</span>
-                    </div>
-                </div>
                 <div id="skill-open-to-learn">
                     <img src="./assets/icons/open-to-learn.svg" alt="Open to learn icon" data-i18n-attr="alt:skills.openToLearnIconAlt">
                     <p data-i18n-html="skills.openToLearnHtml">Don't see the skill you need? <a class="highlighted-text" href="#contact">Contact me</a> I'm always ready to learn!</p>
@@ -145,8 +188,9 @@
                             <span class="used-tools-in-project highlighted-text">
                                 HTML | CSS | JavaScript | Firebase
                             </span>
-                            <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
+                            <p data-i18n="portfolio.portfolioProjects.join.description">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</p>
                             <button class="primary-btn"><a href="https://github.com/BlackPhantomDev/join">GitHub Repo</a></button>
+                            <button class="primary-btn"><a href="https://join.mischasiegrist.ch">Live Demo</a></button>
                         </div>
                     </div>
                 </div>
@@ -160,8 +204,9 @@
                             <span class="used-tools-in-project highlighted-text">
                                 HTML | CSS | JavaScript
                             </span>
-                            <p>Jump and run game based on object-oriented JavaScript programming. Help Pepe collect coins and tabasco bottles to fight off the crazy chickens. Fully playable in the browser – no game engine required.</p>
+                            <p data-i18n="portfolio.portfolioProjects.elPolloLoco.description">Jump and run game based on object-oriented JavaScript programming. Help Pepe collect coins and tabasco bottles to fight off the crazy chickens. Fully playable in the browser – no game engine required.</p>
                             <button class="primary-btn"><a href="https://github.com/BlackPhantomDev/el-pollo-loco">GitHub Repo</a></button>
+                            <button class="primary-btn"><a href="https://el-pollo-loco.mischasiegrist.ch">Live Demo</a></button>
                         </div>
                     </div>
                     <div class="portfolio-project-image">
@@ -183,8 +228,9 @@
                             <span class="used-tools-in-project highlighted-text">
                                 HTML | CSS | JavaScript | API
                             </span>
-                            <p>Based on the PokéAPI a simple library that provides and catalogues pokemon information.</p>
+                            <p data-i18n="portfolio.portfolioProjects.pokedex.description">Based on the PokéAPI a simple library that provides and catalogues pokemon information.</p>
                             <button class="primary-btn"><a href="https://github.com/BlackPhantomDev/pokedex">GitHub Repo</a></button>
+                            <button class="primary-btn"><a href="https://pokedex.mischasiegrist.ch">Live Demo</a></button>
                         </div>
                     </div>
                 </div>
@@ -234,7 +280,7 @@
             </button>
         </div>
 
-        <footer>
+        <footer id="contact">
             <div id="inner-footer-wrapper">
                 <h2 id="footer-title" data-i18n="contact.footerTitle">Say Hi!</h2>
                 <div id="contact-form-wrapper">

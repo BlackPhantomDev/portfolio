@@ -1,0 +1,108 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+}
+
+#skills-wrapper {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 5px solid black;
+    padding: 96px;
+    width: 100%;
+    gap: 48px;
+}
+
+#skills-wrapper #skills-wrapper-title {
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-color);
+    padding: 0 8px;
+    white-space: nowrap;
+}
+
+#skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px; /* Ihr alter Wert */
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    perspective: 1500px; /* aktiviert 3D für die Kinder */
+}
+
+/* Die "Bühne" hat exakt die Größe des alten Bildes -> Layout bleibt gleich */
+.skill-icon-scene {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+/* Der Käfig, der alles außerhalb der 64x64-Box wegschneidet */
+.skill-icon-mask {
+    position: absolute;
+    inset: 0;
+    clip-path: inset(0);
+    transform-style: preserve-3d;
+    transform: translateZ(100px);
+}
+
+/* Drehpunkt in der Mitte der Bühne */
+.skill-icon-rotator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -32px;   /* halbe Icon-Höhe */
+    margin-left: -32px;  /* halbe Icon-Breite */
+    transform-style: preserve-3d;
+    animation-timing-function: linear;
+}
+
+/* Das eigentliche Icon - WICHTIG: ersetzt deine alte ".skill img"-Regel */
+.skill-icon-rotator img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    transform: translateZ(140px);
+    animation-timing-function: linear;
+}
+
+/* Hover-Trigger auf .skill (nicht auf .scene), damit auch das Label hovert */
+.skill:hover .skill-icon-rotator {
+    animation: skillOrbit 0.5s forwards;
+}
+
+.skill:hover .skill-icon-rotator img {
+    animation: skillIconCounter 0.5s forwards;
+}
+
+@keyframes skillOrbit {
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+@keyframes skillIconCounter {
+    0%   { transform: translateZ(140px) rotateY(0deg)    scale(1);    opacity: 1;   }
+    25%  { transform: translateZ(140px) rotateY(-90deg)  scale(0.9);  opacity: 0.9; }
+    50%  { transform: translateZ(140px) rotateY(-180deg) scale(0.65); opacity: 0.5; }
+    75%  { transform: translateZ(140px) rotateY(-270deg) scale(0.9);  opacity: 0.9; }
+    100% { transform: translateZ(140px) rotateY(-360deg) scale(1);    opacity: 1;   }
+}

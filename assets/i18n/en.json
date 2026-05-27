@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Portfolio | First Name",
+    "title": "Portfolio | Mischa Siegrist",
     "logoAlt": "Logo"
   },
   "hero": {
     "titleHtml": "Frontend<br>Developer",
-    "subtitle": "First Name",
+    "subtitle": "Mischa Siegrist",
     "scrollDownHtml": "Scroll<br>Down",
     "scrollArrowAlt": "Scroll arrow"
   },
@@ -13,7 +13,7 @@
     "title": "About me",
     "description": "Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.<br>Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.",
     "houseIconAlt": "House icon",
-    "location": "Based in ",
+    "location": "Based in Interlaken",
     "laptopIconAlt": "Laptop icon",
     "remote": "Open to work remote",
     "cta": "Let's talk",
@@ -28,7 +28,18 @@
   "portfolio": {
     "title": "Portfolio",
     "description": "Explore a selection of my work here – interact with projects to see my skills in action.",
-    "previewAlt": "Project preview"
+    "previewAlt": "Project preview",
+    "portfolioProjects": {
+      "join": {
+        "description": "A task manager inspired by the Kanban system. Create and organise tasks, assign them to users and categories."
+      },
+      "elPolloLoco": {
+        "description": "Jump and run game based on object-oriented JavaScript programming. Help Pepe collect coins and tabasco bottles to fight off the crazy chickens. Fully playable in the browser – no game engine required."
+      },
+      "pokedex": {
+        "description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+      }
+    }
   },
   "references": {
     "title": "References",
@@ -79,7 +90,7 @@
     }
   },
   "footer": {
-    "copyright": "© First Name",
+    "copyright": "© Mischa Siegrist",
     "logoAlt": "Logo",
     "githubAlt": "GitHub icon",
     "mailAlt": "Mail icon",

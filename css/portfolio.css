@@ -68,9 +68,8 @@
     gap: 64px;
 }
 
-.portfolio-project-desc-body .primary-btn:hover {
-    color: black;
-    font-weight: 500;
+.used-tools-in-project {
+    font-size: 24px;
 }
 
 .portfolio-project-counter {

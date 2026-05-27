@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Portfolio | First Name",
+    "title": "Portfolio | Mischa Siegrist",
     "logoAlt": "Logo"
   },
   "hero": {
     "titleHtml": "Frontend<br>Developer",
-    "subtitle": "First Name",
+    "subtitle": "Mischa Siegrist",
     "scrollDownHtml": "Scroll<br>nach unten",
     "scrollArrowAlt": "Scrollpfeil"
   },
@@ -13,7 +13,7 @@
     "title": "Über mich",
     "description": "Schreibe hier ein paar Informationen über dich mit IT-Bezug. Warum brennst du für das Coden? Zeige Lust, neue Technologien zu lernen.<br>Ergänze eine kurze Beschreibung deines Problemlösungsansatzes. Du kannst Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamfähigkeit nennen.",
     "houseIconAlt": "Haus-Icon",
-    "location": "Standort: ",
+    "location": "Wohnhaft in Interlaken",
     "laptopIconAlt": "Laptop-Icon",
     "remote": "Offen für Remote-Arbeit",
     "cta": "Lass uns reden",
@@ -28,7 +28,18 @@
   "portfolio": {
     "title": "Portfolio",
     "description": "Hier findest du eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Skills in Aktion zu sehen.",
-    "previewAlt": "Projekt-Vorschau"
+    "previewAlt": "Projekt-Vorschau",
+    "portfolioProjects": {
+      "join": {
+        "description": "Ein vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben status, weisen Sie sie Benutzern und Kategorien zu."
+      },
+      "elPolloLoco": {
+        "description": "Ein Jump-and-Run-Spiel, das auf objektorientierter JavaScript-Programmierung basiert. Hilf Pepe dabei, Münzen und Tabasco-Flaschen zu sammeln, um die verrückten Hühner abzuwehren. Vollständig im Browser spielbar – keine Spiel-Engine erforderlich."
+      },
+      "pokedex": {
+        "description": "Basierend auf der PokéAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+      }
+    }
   },
   "references": {
     "title": "Referenzen",
@@ -79,11 +90,11 @@
     }
   },
   "footer": {
-    "copyright": "© First Name",
+    "copyright": "© Mischa Siegrist",
     "logoAlt": "Logo",
     "githubAlt": "GitHub-Icon",
     "mailAlt": "Mail-Icon",
     "xingAlt": "Xing-Icon",
-    "legal": "Impressum"
+    "legal": "Rechtliche Hinweise"
   }
 }
