@@ -32,8 +32,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 64px; /* Ihr alter Wert */
+    gap: 64px; 
     width: 100%;
+}
+
+#skill-open-to-learn {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .skill {
@@ -43,10 +49,10 @@
     gap: 16px;
     font-size: 16px;
     font-weight: bold;
-    perspective: 1500px; /* aktiviert 3D für die Kinder */
+    perspective: 1500px;
+    cursor: pointer;
 }
 
-/* Die "Bühne" hat exakt die Größe des alten Bildes -> Layout bleibt gleich */
 .skill-icon-scene {
     width: 64px;
     height: 64px;
@@ -54,7 +60,6 @@
     transform-style: preserve-3d;
 }
 
-/* Der Käfig, der alles außerhalb der 64x64-Box wegschneidet */
 .skill-icon-mask {
     position: absolute;
     inset: 0;
@@ -63,20 +68,18 @@
     transform: translateZ(100px);
 }
 
-/* Drehpunkt in der Mitte der Bühne */
 .skill-icon-rotator {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 0;
     height: 0;
-    margin-top: -32px;   /* halbe Icon-Höhe */
-    margin-left: -32px;  /* halbe Icon-Breite */
+    margin-top: -32px;
+    margin-left: -32px;
     transform-style: preserve-3d;
     animation-timing-function: linear;
 }
 
-/* Das eigentliche Icon - WICHTIG: ersetzt deine alte ".skill img"-Regel */
 .skill-icon-rotator img {
     position: absolute;
     width: 64px;
@@ -85,13 +88,16 @@
     animation-timing-function: linear;
 }
 
-/* Hover-Trigger auf .skill (nicht auf .scene), damit auch das Label hovert */
-.skill:hover .skill-icon-rotator {
-    animation: skillOrbit 0.5s forwards;
+.skill:hover {
+    color: var(--highlighted);
 }
 
-.skill:hover .skill-icon-rotator img {
-    animation: skillIconCounter 0.5s forwards;
+.skill-icon-scene:hover .skill-icon-rotator {
+    animation: skillOrbit .5s forwards;
+}
+
+.skill-icon-scene .skill-icon-rotator img {
+    animation: skillIconCounter .5s forwards;
 }
 
 @keyframes skillOrbit {
@@ -100,9 +106,9 @@
 }
 
 @keyframes skillIconCounter {
-    0%   { transform: translateZ(140px) rotateY(0deg)    scale(1);    opacity: 1;   }
-    25%  { transform: translateZ(140px) rotateY(-90deg)  scale(0.9);  opacity: 0.9; }
-    50%  { transform: translateZ(140px) rotateY(-180deg) scale(0.65); opacity: 0.5; }
-    75%  { transform: translateZ(140px) rotateY(-270deg) scale(0.9);  opacity: 0.9; }
-    100% { transform: translateZ(140px) rotateY(-360deg) scale(1);    opacity: 1;   }
+    0%   { transform: translateZ(30px) rotateY(0deg)    scale(1);    opacity: 1;   }
+    25%  { transform: translateZ(30px) rotateY(-90deg)  scale(0.9);  opacity: 0.9; }
+    50%  { transform: translateZ(30px) rotateY(-180deg) scale(0.65); opacity: 0.5; }
+    75%  { transform: translateZ(30px) rotateY(-270deg) scale(0.9);  opacity: 0.9; }
+    100% { transform: translateZ(30px) rotateY(-360deg) scale(1);    opacity: 1;   }
 }
