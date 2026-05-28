@@ -215,6 +215,14 @@ nav, #hero, #about, #skills, #portfolio, #references, .arrow-to-next-section {
     align-items: center;
 }
 
+.primary-btn.reference-github a {
+    font-size: 18px;
+    padding: 12px 24px;
+}
+
+.primary-btn.reference-github:hover a {
+    color: var(--highlighted);
+}
 
 #to-contact {
     justify-content: flex-end;

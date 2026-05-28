@@ -44,10 +44,12 @@
   "references": {
     "title": "Referenzen",
     "description": "Ich arbeite gerne eigenständig und im Team. Hier ist, was meine Kolleg:innen über die Zusammenarbeit mit mir sagen.",
-    "person1Role": "Fullstack-Entwickler",
-    "person2Role": "Team-Partner",
-    "person3Role": "Fullstack-Entwickler",
-    "lorem": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus officiis minima quia? Iure alias ratione eaque, reiciendis, placeat commodi quod quasi officiis consectetur, porro quia aspernatur amet harum incidunt?"
+    "person1Role": "Frontend Entwickler | Team Partner",
+    "person2Role": "Frontend Entwickler | Team Partner",
+    "person3Role": "Frontend Entwickler | Team Partner",
+    "christopher": "Mit Mischa habe ich gemeinsam das Join-Projekt umgesetzt – und die Zusammenarbeit war durchweg ein Gewinn. Er war jederzeit hilfsbereit und hat sich die Zeit genommen, Dinge verständlich zu erklären, wenn es mal hakte. Seine klare Kommunikation hat dafür gesorgt, dass wir uns im Team immer gut abstimmen konnten und keine Missverständnisse entstanden. Besonders beeindruckt hat mich seine Motivation: Bei allem, was wir umsetzen mussten, war er mit vollem Einsatz dabei.",
+    "filip": "Im Rahmen unseres Projekts habe ich Mischa als zuverlässigen und kommunikativen Teampartner kennengelernt. Er hat seinen Fortschritt regelmäßig geteilt, Kompromisse gefunden und stets das gemeinsame Ziel im Blick behalten – uneingeschränkt empfehlenswert.",
+    "denny": ""
   },
   "contact": {
     "footerTitle": "Sag Hallo!",
