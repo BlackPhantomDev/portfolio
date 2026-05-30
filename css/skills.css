@@ -5,6 +5,7 @@
     align-items: center;
     max-width: 1920px;
     width: 100%;
+    scroll-margin-top: 56px;
 }
 
 #skills-wrapper {    

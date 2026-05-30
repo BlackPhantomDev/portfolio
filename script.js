@@ -167,3 +167,31 @@ function startCooldown() {
         }
     }, 1000);
 }
+
+function openNavbar() {
+    const isOpen = document.body.classList.toggle('menu-open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    const toggle = document.getElementById('nav-toggle');
+    const overlay = document.getElementById('nav-overlay');
+    if (toggle) toggle.setAttribute('aria-expanded', String(isOpen));
+    if (overlay) overlay.setAttribute('aria-hidden', String(!isOpen));
+}
+
+function closeNavbar() {
+    document.body.classList.remove('menu-open');
+    document.body.style.overflow = '';
+    const toggle = document.getElementById('nav-toggle');
+    const overlay = document.getElementById('nav-overlay');
+    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    if (overlay) overlay.setAttribute('aria-hidden', 'true');
+}
+
+document.querySelectorAll('#nav-overlay-menu .nav-overlay-link').forEach(link => {
+    link.addEventListener('click', closeNavbar);
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.body.classList.contains('menu-open')) {
+        closeNavbar();
+    }
+});

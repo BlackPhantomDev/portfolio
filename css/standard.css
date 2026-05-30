@@ -13,6 +13,7 @@
 
 html {
     background-color: var(--background-color);
+    scroll-padding-top: 140px;
 }
 
 .highlighted-text {
