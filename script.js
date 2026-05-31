@@ -138,6 +138,14 @@ function resetField(f) {
     f.closest('.form-field')?.classList.remove('is-valid', 'is-invalid');
 }
 
+document.querySelector('#to-skills button').addEventListener('click', () => {
+    document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.querySelector('#to-portfolio button').addEventListener('click', () => {
+    document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+});
+
 document.querySelector('#to-contact button').addEventListener('click', () => {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 });
