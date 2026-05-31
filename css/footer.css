@@ -336,7 +336,7 @@ footer {
 }
 
 #footer-legal-links a:hover {
-    margin-right: -8px;
+    margin: 0 -8px 0 8px;
     transition: all .2s ease-in-out;
 }
 
