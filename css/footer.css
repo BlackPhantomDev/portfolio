@@ -299,6 +299,10 @@ footer {
     gap: 56px;
 }
 
+#footer-links-right-icons a {
+    color: white;
+}
+
 #footer-links-right-icons a:hover {
     margin-top: -24px;
 }
