@@ -277,16 +277,4 @@ body.menu-open .nav-overlay-link:nth-child(3) { transition-delay: .24s; }
     transition: margin-top .2s ease;
 }
 
-@media (max-width: 768px) {
-    #nav-overlay-footer {
-        padding: 40px 28px;
-        min-height: 180px;
-    }
-    #nav-overlay-socials {
-        gap: 28px;
-    }
-    #nav-overlay-socials img {
-        width: 26px;
-        height: 26px;
-    }
-}
+/* Media Queries leben jetzt in responsive.css */

@@ -32,6 +32,7 @@
     width: 100%;
     position: relative;
     overflow-x: clip;
+    align-items: flex-start;
 }
 
 .portfolio-project-image {
@@ -63,9 +64,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 46%;
     height: 100%;
-    gap: 64px;
+    gap: 48px;
 }
 
 .used-tools-in-project {
@@ -125,11 +126,17 @@
     flex-direction: column;
     gap: 16px;
     max-width: 75%;
-    position: absolute;
-    top: 0;
-    left: -100%;
+    opacity: 0;
+    transform: translateX(-100%);
     visibility: hidden;
-    z-index: -1;
+    transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
+}
+
+.project-left-to-right:hover .portfolio-project-desc-body {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    transition: opacity .3s ease, transform .3s ease, visibility 0s linear;
 }
 
 .project-left-to-right .portfolio-project-desc-body .primary-btn {
@@ -186,11 +193,17 @@
     align-items: flex-end;
     gap: 16px;
     max-width: 75%;
-    position: absolute;
-    top: 0;
-    right: -100%;
+    opacity: 0;
+    transform: translateX(100%);
     visibility: hidden;
-    z-index: -1;
+    transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
+}
+
+.project-right-to-left:hover .portfolio-project-desc-body {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    transition: opacity .3s ease, transform .3s ease, visibility 0s linear;
 }
 
 .project-right-to-left .portfolio-project-desc-body .primary-btn {
