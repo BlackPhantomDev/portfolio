@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | Mischa Siegrist</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/legal.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+</head>
+<body onload="init()">
+    <header>
+        <nav>
+            <div id="nav-left">
+                <div id="nav-logo-container">
+                    <img id="nav-logo" src="./assets/img/logo.svg" alt="Logo" data-i18n-attr="alt:meta.logoAlt">
+                </div>
+            </div>
+            <div id="nav-right">
+                <div id="lang-switch">
+                    <span onclick="switchLanguage('de')" class="lang-switch-option">DE</span>
+                    <span onclick="switchLanguage('en')" class="lang-switch-option selected">EN</span>
+                </div>
+                <div id="nav-toggle" onclick="openNavbar()">
+                    <span class="nav-toggle-bar" id="bar1"></span>
+                    <span class="nav-toggle-bar" id="bar2"></span>
+                    <span class="nav-toggle-bar" id="bar3"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="legal-section">
+            <div id="legal-content">
+                <h1>Impressum</h1>
+
+                <div class="legal-block">
+                    <address>
+                        Mischa Siegrist<br>
+                        Wychelstrasse 44<br>
+                        3800 Matten b. Interlaken<br>
+                        Schweiz
+                    </address>
+                </div>
+
+                <div class="legal-block">
+                    <h2>Vertretungsberechtigte Person</h2>
+                    <p>Mischa Siegrist</p>
+                </div>
+
+                <div class="legal-block">
+                    <h2>Kontakt</h2>
+                    <p>
+                        Telefon: <a href="tel:+41797731053">079 773 10 53</a><br>
+                        E-Mail: <a href="mailto:info@siegristdigital.ch">info@siegristdigital.ch</a><br>
+                        Web: <a href="./index.html">siegristdigital.ch</a>
+                    </p>
+                </div>
+
+                <div class="legal-block">
+                    <h2>Haftungsausschluss</h2>
+                    <ol class="legal-list">
+                        <li>
+                            <strong>Inhalte</strong><br>
+                            Trotz sorgf&auml;ltiger inhaltlicher Kontrolle &uuml;bernehmen wir keine Gew&auml;hr f&uuml;r die Aktualit&auml;t, Vollst&auml;ndigkeit und Richtigkeit der bereitgestellten Informationen. Jegliche Haftungsanspr&uuml;che gegen uns, die sich auf Sch&auml;den materieller oder ideeller Art beziehen – verursacht durch die Nutzung oder Nichtnutzung der dargebotenen Inhalte bzw. durch Nutzung fehlerhafter und unvollst&auml;ndiger Informationen – sind grunds&auml;tzlich ausgeschlossen.
+                        </li>
+                        <li>
+                            <strong>Externe Links</strong><br>
+                            Unsere Webseite enth&auml;lt Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb &uuml;bernehmen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+                        </li>
+                        <li>
+                            <strong>Urheberrecht</strong><br>
+                            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem schweizerischen Urheberrecht. Beitr&auml;ge Dritter sind als solche gekennzeichnet. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bed&uuml;rfen unserer schriftlichen Zustimmung.
+                        </li>
+                        <li>
+                            <strong>&Auml;nderungen und Irrt&uuml;mer</strong><br>
+                            Wir behalten uns ausdr&uuml;cklich vor, Teile der Seiten oder das gesamte Angebot jederzeit zu &auml;ndern, zu erg&auml;nzen, zu l&ouml;schen oder die Ver&ouml;ffentlichung zeitweise oder endg&uuml;ltig einzustellen. Sollten einzelne Formulierungen oder Darstellungen dieses Haftungsausschlusses unwirksam sein, bleiben die &uuml;brigen Bestimmungen davon unber&uuml;hrt.
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="legal-block">
+                    <h3>Quelle:</h3>
+                    <p>Impressum mit dem Impressum-Generator von <a href="https://dartera.ch/" target="_blank">dartera</a> erstellt</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div id="inner-footer-wrapper">
+            <h2 id="footer-title" data-i18n="contact.footerTitle">Say Hi!</h2>
+            <div id="contact-form-wrapper">
+                <form action="https://sd.mischasiegrist.ch/mailer.php" id="contact-form" novalidate onsubmit="return false;">
+                    <h3 class="highlighted-text" data-i18n="contact.formHeading">Want to discouss a new project?</h3>
+                    <p data-i18n="contact.formIntro">Say hello! Let's discuss your ideas and make it happen</p>
+
+                    <div class="form-field">
+                        <input type="text" id="form-name" name="name" maxlength="100" placeholder=" " required>
+                        <label for="form-name" data-i18n="contact.nameLabel">Your name</label>
+                        <span class="field-icon"></span>
+                        <span class="field-error" data-i18n="contact.nameError">Your name is required</span>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="email" id="form-email" name="email" maxlength="254" placeholder=" " required>
+                        <label for="form-email" data-i18n="contact.emailLabel">Your email</label>
+                        <span class="field-icon"></span>
+                        <span class="field-error" data-i18n="contact.emailError">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="text" id="form-subject" name="subject" maxlength="200" placeholder=" " required>
+                        <label for="form-subject" data-i18n="contact.subjectLabel">Your subject</label>
+                        <span class="field-icon"></span>
+                        <span class="field-error" data-i18n="contact.subjectError">Please enter subject</span>
+                    </div>
+
+                    <div class="form-field form-field-textarea">
+                        <textarea id="form-text" rows="6" name="message" maxlength="5000" placeholder=" " required></textarea>
+                        <label for="form-text" data-i18n="contact.messageLabel">Your message</label>
+                        <span class="field-icon"></span>
+                        <span class="field-error" data-i18n="contact.messageError">Your message is empty</span>
+                    </div>
+
+                    <div id="form-check-section">
+                        <input type="checkbox" name="accept" id="accept-privacy-policy" required>
+                        <label for="accept-privacy-policy" id="accept-privacy-policy-label" data-i18n-html="contact.privacyLabelHtml">I've read the <a href="privacy.html" id="accept-privacy-link" class="highlighted-text">privacy policy</a> and agree to the processing of my data as outlined.</label>
+                    </div>
+                    <br><br>
+                    <div id="form-captcha">
+                        <div class="h-captcha" data-sitekey="ebba1710-83a6-4e3e-b424-677cc038ed60"></div>
+                    </div>
+                    <br><br>
+                    <div id="form-errors">
+
+                    </div>
+                    <div id="form-success" hidden data-i18n="contact.success">
+                        Thanks for your message! I will reply you as soon as posible.
+                    </div>
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+                    <input class="primary-btn disabled" id="submit-form" value="Send message" name="submit" type="submit" data-i18n-attr="value:contact.submit" />
+                </form>
+                <span id="arrow-back-to-top" onclick="window.location.href='#'">
+                    <svg width="53" height="95" viewBox="0 0 53 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.41421 67.1052L26.4142 92.1052L51.4142 67.1052" stroke="black" stroke-width="4"/>
+                        <path d="M26.4142 0V92.1053" stroke="black" stroke-width="4"/>
+                    </svg>
+                </span>
+            </div>
+            <div id="footer-links">
+                <div id="footer-links-left">
+                    <img src="./assets/img/logo-footer.svg" alt="Logo" data-i18n-attr="alt:footer.logoAlt">
+                    <p><span data-i18n="footer.copyright">© First Name</span> <span id="footer-year"></span></p>
+                </div>
+                <div id="footer-links-right">
+                    <div id="footer-links-right-icons">
+                        <a href="https://github.com/BlackPhantomDev"><img src="./assets/icons/github.svg" alt="GitHub Icon" data-i18n-attr="alt:footer.githubAlt"></a>
+                        <a href="mailto:info@firstname.com"><img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-attr="alt:footer.mailAlt"></a>
+                        <a href="https://www.xing.com/profile/"><img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-attr="alt:footer.xingAlt"></a>
+                    </div>
+                    <div id="footer-legal-links">
+                        <a href="./legal.html" data-i18n="footer.legal">Legal notice</a>
+                        <a href="./imprint.html" data-i18n="footer.imprint">Imprint</a>
+                        <a href="./privacy.html" data-i18n="footer.privacy">Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
