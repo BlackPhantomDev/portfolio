@@ -100,5 +100,298 @@
     "legal": "Rechtliche Hinweise",
     "imprint": "Impressum",
     "privacy": "Datenschutzerklärung"
+  },
+  "privacy": {
+    "title": "Datenschutz\u00aderklärung",
+    "toc": {
+      "title": "Inhaltsverzeichnis",
+      "item1": "Einleitung und Geltungsbereich",
+      "item2": "Verantwortlicher (Controller)",
+      "item3": "Begriffsdefinitionen",
+      "item4": "Rechtsgrundlagen",
+      "item5": "Art der erhobenen Daten",
+      "item6": "Zwecke der Datenverarbeitung",
+      "item7": "Allgemeine Datenverarbeitungen",
+      "item8": "Datenverarbeitungen im Einzelnen (Drittdienste)",
+      "item9": "Aufbewahrungsfristen",
+      "item10": "Datensicherheit",
+      "item11": "Betroffenenrechte",
+      "item12": "Aktualisierung und Kontakt"
+    },
+    "s1": {
+      "title": "1. Einleitung und Geltungsbereich",
+      "p1Html": "Mit dieser Datenschutzerklärung informieren wir Sie umfassend über die Art, den Umfang und die Zwecke der Erhebung und Verwendung Ihrer personenbezogenen Daten durch <strong>Mischa Siegrist</strong>.",
+      "p2": "Diese Datenschutzerklärung gilt für unsere Website \"<i>Mischa Siegrist / mischasiegrist.ch</i>\" sowie für alle damit verbundenen Online-Angebote, Dienste und Kommunikationskanäle.",
+      "p3": "Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich und entsprechend dem schweizerischen Datenschutzrecht, insbesondere dem revidierten Bundesgesetz über den Datenschutz (revDSG).",
+      "p4": "Die Nutzung unserer Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.",
+      "p5": "Für einzelne oder zusätzliche Angebote können besondere, ergänzende oder weitere Datenschutzerklärungen sowie sonstige rechtliche Dokumente wie Allgemeine Geschäftsbedingungen (AGB), Nutzungsbedingungen oder Teilnahmebedingungen gelten."
+    },
+    "s2": {
+      "title": "2. Verantwortlicher (Controller)",
+      "intro": "Verantwortlich für die Datenbearbeitung im Sinne der Datenschutzgesetzgebung ist:",
+      "address": "Mischa Siegrist <br> Wychelstrassee 44 <br> 3800 Matten b. Interlaken <br> Schweiz",
+      "contact": "E-Mail: <a href=\"mailto:info@mischasiegrist.ch\">info@mischasiegrist.ch</a> <br> Website: <a href=\"https://mischasiegrist.ch\">mischasiegrist.ch</a>",
+      "questions": "Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden."
+    },
+    "s3": {
+      "title": "3. Begriffsdefinitionen",
+      "intro": "Um diese Datenschutzerklärung verständlich zu gestalten, verwenden wir folgende Begriffsdefinitionen:",
+      "term1": "Personendaten / Personenbezogene Daten",
+      "def1": "Alle Angaben, die sich auf eine bestimmte oder bestimmbare natürliche Person beziehen. Dazu gehören beispielsweise Name, Adresse, E-Mail-Adresse, Telefonnummer oder IP-Adresse.",
+      "term2": "Bearbeitung / Verarbeitung",
+      "def2": "Jeder Umgang mit Personendaten, unabhängig von den angewandten Mitteln und Verfahren, insbesondere das Beschaffen, Speichern, Aufbewahren, Verwenden, Verändern, Bekanntgeben, Archivieren, Löschen oder Vernichten von Daten.",
+      "term3": "Betroffene Person",
+      "def3": "Die natürliche Person, deren personenbezogene Daten verarbeitet werden.",
+      "term4": "Verantwortlicher",
+      "def4": "Die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.",
+      "term5": "Auftragsverarbeiter",
+      "def5": "Eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.",
+      "term6": "Einwilligung",
+      "def6": "Jede freiwillig für den bestimmten Fall, in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung.",
+      "term7": "Cookies",
+      "def7": "Kleine Textdateien, die auf Ihrem Endgerät gespeichert werden und bestimmte Informationen enthalten können. Man unterscheidet zwischen Session-Cookies (werden nach Beendigung der Browsersitzung gelöscht) und persistenten Cookies (werden für einen definierten Zeitraum gespeichert)."
+    },
+    "s4": {
+      "title": "4. Rechtsgrundlagen",
+      "p1": "Wir bearbeiten Personendaten im Einklang mit dem schweizerischen Datenschutzrecht, insbesondere dem revidierten Bundesgesetz über den Datenschutz (revDSG) vom 25. September 2020 und der Verordnung über den Datenschutz (DSV).",
+      "p2": "Nach Schweizer Recht ist eine Bearbeitung von Personendaten grundsätzlich erlaubt, sofern:",
+      "li1": "kein gesetzliches Verbot besteht",
+      "li2": "die betroffene Person eingewilligt hat",
+      "li3": "ein überwiegendes privates oder öffentliches Interesse besteht",
+      "li4": "die Bearbeitung zur Vertragserfüllung erforderlich ist",
+      "p3": "Bei der Bearbeitung besonders schützenswerter Personendaten oder bei Profiling mit hohem Risiko gelten strengere Anforderungen."
+    },
+    "s5": {
+      "title": "5. Art der erhobenen Daten",
+      "intro": "Wir erheben und verarbeiten verschiedene Kategorien personenbezogener Daten. Welche Daten konkret erhoben werden, hängt von den jeweiligen Diensten und Funktionen ab, die Sie nutzen.",
+      "overviewTitle": "Übersicht der Datenkategorien",
+      "thCategory": "Kategorie",
+      "thExamples": "Beispiele",
+      "thDescription": "Beschreibung",
+      "row1Cat": "Stammdaten",
+      "row1Ex": "Name, Vorname, Anrede, Titel",
+      "row1Desc": "Grundlegende personenbezogene Informationen zur Identifikation",
+      "row2Cat": "Kontaktdaten",
+      "row2Ex": "E-Mail-Adresse, Telefonnummer, Postadresse",
+      "row2Desc": "Informationen zur Kontaktaufnahme und Kommunikation",
+      "row3Cat": "Technische Daten",
+      "row3Ex": "IP-Adresse, Browsertyp und -version, Betriebssystem, Gerätetyp, Bildschirmauflösung",
+      "row3Desc": "Automatisch erfasste Informationen bei der Nutzung unserer Website",
+      "row4Cat": "Nutzungsdaten",
+      "row4Ex": "Besuchte Seiten, Verweildauer, Klickpfade, Zugriffszeiten",
+      "row4Desc": "Informationen über Ihr Nutzungsverhalten auf unserer Website",
+      "row5Cat": "Inhaltsdaten",
+      "row5Ex": "Texteingaben in Formularen, Nachrichteninhalte, Dateien",
+      "row5Desc": "Von Ihnen aktiv übermittelte Informationen",
+      "sourcesTitle": "Datenquellen",
+      "sourcesIntro": "Die Daten werden auf verschiedene Arten erhoben:",
+      "src1Html": "<strong>Direkt von Ihnen:</strong> durch Eingabe in Formulare, E-Mails, Registrierung",
+      "src2Html": "<strong>Automatisch:</strong> durch technische Protokollierung beim Websitebesuch",
+      "src3Html": "<strong>Von Dritten:</strong> z.B. durch Zahlungsdienstleister oder Werbepartner (sofern zutreffend)"
+    },
+    "s6": {
+      "title": "6. Zwecke der Datenverarbeitung",
+      "intro": "Wir verarbeiten Ihre personenbezogenen Daten für folgende Zwecke:",
+      "thPurpose": "Zweck",
+      "thDescription": "Beschreibung",
+      "thBasis": "Rechtsgrundlage",
+      "row1Purpose": "Bereitstellung und Betrieb unserer Website",
+      "row1Desc": "Um Ihnen unsere Website und deren Funktionen zur Verfügung zu stellen",
+      "row1Basis": "Berechtigtes Interesse",
+      "row2Purpose": "Gewährleistung der IT-Sicherheit",
+      "row2Desc": "Schutz unserer Systeme vor Missbrauch, Angriffen und technischen Störungen",
+      "row2Basis": "Berechtigtes Interesse",
+      "row3Purpose": "Bearbeitung von Kontaktanfragen",
+      "row3Desc": "Zur Beantwortung Ihrer Anfragen und zur Kommunikation mit Ihnen",
+      "row3Basis": "Vertragsanbahnung / Berechtigtes Interesse",
+      "row4Purpose": "Erfüllung rechtlicher Verpflichtungen",
+      "row4Desc": "Zur Einhaltung gesetzlicher Aufbewahrungs- und Dokumentationspflichten",
+      "row4Basis": "Rechtliche Verpflichtung"
+    },
+    "s7": {
+      "title": "7. Allgemeine Datenverarbeitungen",
+      "formsTitle": "Kontaktformulare",
+      "formsIntro": "Wenn Sie uns über ein Kontaktformular kontaktieren, werden die von Ihnen angegebenen Daten (Name, E-Mail-Adresse, Telefonnummer, Nachricht) zur Bearbeitung Ihrer Anfrage verarbeitet und gespeichert.",
+      "formsDataHtml": "<strong>Verarbeitete Daten:</strong> Name, E-Mail-Adresse, optional Telefonnummer, Nachrichteninhalt",
+      "formsBasisHtml": "<strong>Rechtsgrundlage:</strong> Vertragserfüllung oder Vertragsanbahnung (Art. 31 Abs. 2 lit. a revDSG) oder Berechtigtes Interesse (Art. 31 Abs. 1 revDSG)",
+      "formsRetentionHtml": "<strong>Speicherdauer:</strong> Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+      "logsTitle": "Server-Logfiles",
+      "logsIntro": "Bei jedem Zugriff auf unsere Website werden automatisch technische Daten in Server-Logfiles erfasst. Dies ist aus technischen und sicherheitsrelevanten Gründen erforderlich.",
+      "logsDataHtml": "<strong>Verarbeitete Daten:</strong> IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Seite/Datei, übertragene Datenmenge, Browsertyp und -version, verwendetes Betriebssystem, Referrer-URL, Hostname des zugreifenden Rechners",
+      "logsBasisHtml": "<strong>Rechtsgrundlage:</strong> Berechtigtes Interesse (Art. 31 Abs. 1 revDSG) – Gewährleistung der Systemsicherheit und Fehleranalyse",
+      "logsRetentionHtml": "<strong>Speicherdauer:</strong> Die Logfiles werden nach 30 Tagen automatisch gelöscht, sofern keine längere Aufbewahrung zu Beweiszwecken erforderlich ist."
+    },
+    "s8": {
+      "title": "8. Datenverarbeitungen im Einzelnen (Drittdienste)",
+      "intro": "Wir nutzen Dienste von Drittanbietern, um unsere Website zu betreiben, zu analysieren und zu verbessern. Im Folgenden informieren wir Sie detailliert über die eingesetzten Dienste.",
+      "hostingTitle": "Hosting & Infrastruktur",
+      "infomaniakTitle": "Infomaniak",
+      "labelProvider": "Anbieter:",
+      "valProvider": "Infomaniak Network SA",
+      "labelLocation": "Standort:",
+      "valLocation": "Schweiz",
+      "labelPurpose": "Zweck:",
+      "valPurpose": "Schweizer Webhosting und Cloud-Dienste",
+      "labelDataCategories": "Datenkategorien:",
+      "valDataCategories": "IP-Adresse, Serverlogs, Website-Daten",
+      "labelBasis": "Rechtsgrundlage:",
+      "valBasis": "Vertragserfüllung",
+      "labelPrivacy": "Datenschutzerklärung:"
+    },
+    "s9": {
+      "title": "9. Aufbewahrungsfristen",
+      "heading": "Aufbewahrungsfristen",
+      "intro": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die Erfüllung der Zwecke, für die sie erhoben wurden, erforderlich ist oder wie es gesetzliche Aufbewahrungspflichten vorsehen.",
+      "principlesTitle": "Allgemeine Grundsätze",
+      "principlesIntro": "Die Speicherdauer richtet sich nach:",
+      "p1": "dem Zweck der Datenverarbeitung",
+      "p2": "gesetzlichen Aufbewahrungspflichten",
+      "p3": "berechtigten Interessen (z.B. Verteidigung gegen Rechtsansprüche)",
+      "p4": "der Art der Daten und dem Risiko für die betroffenen Personen",
+      "concreteTitle": "Konkrete Aufbewahrungsfristen",
+      "thCategory": "Datenkategorie",
+      "thPeriod": "Aufbewahrungsfrist",
+      "thBasis": "Grundlage",
+      "row1Cat": "Kontaktanfragen",
+      "row1Period": "12 Monate",
+      "row1Basis": "Zweckerfüllung / Berechtigtes Interesse",
+      "row2Cat": "Server-Logfiles",
+      "row2Period": "30 Tage",
+      "row2Basis": "IT-Sicherheit",
+      "row3Cat": "Buchungsbelege / Rechnungen",
+      "row3Period": "10 Jahre",
+      "row3Basis": "Art. 958f OR (Schweizer Recht)",
+      "row4Cat": "Verträge und Geschäftskorrespondenz",
+      "row4Period": "10 Jahre nach Vertragsende",
+      "row4Basis": "Art. 958f OR / Verjährungsfristen",
+      "legalTitle": "Gesetzliche Aufbewahrungspflichten (Schweiz)",
+      "legalIntro": "Nach schweizerischem Recht gelten insbesondere folgende Aufbewahrungspflichten:",
+      "legalLi1Html": "<strong>Art. 958f OR:</strong> Geschäftsbücher und Buchungsbelege sowie der Geschäftsbericht und der Revisionsbericht sind während zehn Jahren aufzubewahren.",
+      "legalLi2": "Steuerrechtliche Vorschriften können zusätzliche Aufbewahrungspflichten vorsehen.",
+      "outro": "Nach Ablauf der jeweiligen Fristen werden die Daten routinemässig gelöscht, sofern sie nicht für andere Zwecke weiterhin benötigt werden."
+    },
+    "s10": {
+      "title": "10. Datensicherheit",
+      "heading": "Datensicherheit",
+      "p1": "Wir treffen angemessene technische und organisatorische Sicherheitsmassnahmen (TOM), um Ihre personenbezogenen Daten vor unberechtigtem Zugriff, Verlust, Missbrauch oder Zerstörung zu schützen. Die konkret eingesetzten Massnahmen richten sich nach dem aktuellen Stand der Technik und werden regelmässig überprüft und angepasst.",
+      "p2": "Unsere Sicherheitsmassnahmen können je nach Risiko und Schutzbedarf insbesondere umfassen:",
+      "li1": "Verschlüsselte Datenübertragung (z.B. TLS/SSL)",
+      "li2": "Zugriffsbeschränkungen und Berechtigungskonzepte",
+      "li3": "Schutz der IT-Infrastruktur durch geeignete Sicherheitssysteme",
+      "li4": "Regelmässige Datensicherungen",
+      "li5": "Wartung und Aktualisierung unserer Systeme",
+      "li6": "Vertraulichkeitsverpflichtungen für Mitarbeitende",
+      "li7": "Sorgfältige Auswahl und vertragliche Bindung von Dienstleistern",
+      "li8": "Prozesse zur Erkennung und Behandlung von Sicherheitsvorfällen",
+      "restrictionTitle": "Einschränkung",
+      "restriction1": "Trotz aller Vorsichtsmassnahmen kann keine Datenübertragung im Internet als vollständig sicher garantiert werden.",
+      "restriction2": "Im Falle einer Datenschutzverletzung, die voraussichtlich zu einem hohen Risiko für Ihre Rechte und Freiheiten führt, werden wir Sie unverzüglich informieren und die zuständigen Behörden benachrichtigen."
+    },
+    "s11": {
+      "title": "11. Betroffenenrechte",
+      "heading": "Ihre Rechte (Betroffenenrechte)",
+      "intro": "Als betroffene Person haben Sie verschiedene Rechte in Bezug auf Ihre personenbezogenen Daten. Diese Rechte ergeben sich aus dem schweizerischen Datenschutzgesetz (revDSG).",
+      "accessTitle": "Auskunftsrecht",
+      "accessText": "Sie haben das Recht, von uns eine Bestätigung darüber zu verlangen, ob wir personenbezogene Daten von Ihnen verarbeiten. Ist dies der Fall, haben Sie das Recht auf Auskunft über diese Daten sowie auf weitere Informationen wie Verarbeitungszwecke, Kategorien der Daten, Empfänger und geplante Speicherdauer.",
+      "correctionTitle": "Recht auf Berichtigung",
+      "correctionText": "Sie haben das Recht, die Berichtigung unrichtiger oder die Vervollständigung unvollständiger personenbezogener Daten zu verlangen.",
+      "deletionTitle": "Recht auf Löschung (\"Recht auf Vergessenwerden\")",
+      "deletionText": "Sie haben das Recht, unter bestimmten Voraussetzungen die Löschung Ihrer personenbezogenen Daten zu verlangen. Dies gilt insbesondere, wenn die Daten für die Zwecke, für die sie erhoben wurden, nicht mehr notwendig sind oder Sie Ihre Einwilligung widerrufen.",
+      "restrictionTitle": "Recht auf Einschränkung der Verarbeitung",
+      "restrictionText": "Sie haben das Recht, unter bestimmten Voraussetzungen die Einschränkung der Verarbeitung Ihrer Daten zu verlangen, z.B. wenn Sie die Richtigkeit der Daten bestreiten oder die Verarbeitung unrechtmässig ist.",
+      "portabilityTitle": "Recht auf Datenübertragbarkeit",
+      "portabilityText": "Sie haben das Recht, die Sie betreffenden personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und diese Daten einem anderen Verantwortlichen zu übermitteln.",
+      "withdrawalTitle": "Recht auf Widerruf der Einwilligung",
+      "withdrawalText": "Soweit die Verarbeitung auf einer Einwilligung beruht, haben Sie das Recht, diese jederzeit mit Wirkung für die Zukunft zu widerrufen.",
+      "complaintTitle": "Beschwerderecht",
+      "complaintText": "Sie haben das Recht, sich beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) zu beschweren:",
+      "edoebName": "Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)",
+      "edoebStreet": "Feldeggweg 1",
+      "edoebCity": "CH-3003 Bern",
+      "edoebPhone": "Tel.: +41 58 462 43 95",
+      "edoebWebsite": "Website:",
+      "exerciseTitle": "Ausübung Ihrer Rechte",
+      "exerciseIntro": "Zur Ausübung Ihrer Rechte können Sie sich jederzeit an uns wenden:",
+      "exerciseEmail": "E-Mail:",
+      "exerciseOutro": "Für die Bearbeitung Ihres Anliegens benötigen wir einen Identitätsnachweis, um sicherzustellen, dass die Anfrage von der berechtigten Person stammt. In der Regel bearbeiten wir Ihre Anfrage innerhalb eines Monats."
+    },
+    "s12": {
+      "title": "12. Aktualisierung und Kontakt",
+      "updateTitle": "Aktualisierung dieser Datenschutzerklärung",
+      "p1": "Wir können diese Datenschutzerklärung von Zeit zu Zeit anpassen und aktualisieren, um Änderungen unserer Datenverarbeitungspraktiken, neue gesetzliche Anforderungen oder sonstige Entwicklungen zu berücksichtigen.",
+      "p2": "Änderungen werden auf unserer Website veröffentlicht. Bei wesentlichen Änderungen, die Ihre Rechte oder die Art der Datenverarbeitung betreffen, werden wir Sie – soweit möglich und angemessen – gesondert informieren.",
+      "p3": "Wir empfehlen Ihnen, diese Datenschutzerklärung regelmässig zu überprüfen, um über den aktuellen Stand unserer Datenschutzpraktiken informiert zu sein.",
+      "contactTitle": "Kontakt bei Fragen",
+      "contactIntro": "Bei Fragen zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten können Sie sich jederzeit an uns wenden:",
+      "contactName": "Mischa Siegrist",
+      "contactEmail": "E-Mail: <a href=\"mailto:info@mischasiegrist.ch\">info@mischasiegrist.ch</a>",
+      "statusLabel": "Stand dieser Datenschutzerklärung:",
+      "statusDate": "13.04.2026"
+    },
+    "privacyFooter": {
+      "generatorHtml": "Diese Datenschutzerklärung wurde mit dem Datenschutzerklärung-Generator von <a href=\"https://dartera.ch\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>dartera</strong></a> erstellt.",
+      "statusLabel": "Stand:",
+      "statusDate": "13.04.2026"
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "blocks": {
+      "b2": {
+        "subTitle": "Vertretungsberechtigte Person",
+        "description": ""
+      },
+      "b3": {
+        "subTitle": "Kontakt",
+        "description": ""
+      },
+      "b4": {
+        "subTitle": "Haftungsausschluss",
+        "description": "",
+        "list": {
+          "l1": {
+            "title": "Inhalte",
+            "description": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit der bereitgestellten Informationen. Jegliche Haftungsansprüche gegen uns, die sich auf Schäden materieller oder ideeller Art beziehen – verursacht durch die Nutzung oder Nichtnutzung der dargebotenen Inhalte bzw. durch Nutzung fehlerhafter und unvollständiger Informationen – sind grundsätzlich ausgeschlossen."
+          },
+          "l2": {
+            "title": "Externe Links",
+            "description": "Unsere Webseite enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb übernehmen wir für diese fremden Inhalte auch keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+          },
+          "l3": {
+            "title": "Urheberrecht",
+            "description": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem schweizerischen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen unserer schriftlichen Zustimmung."
+          },
+          "l4": {
+            "title": "Änderungen und Irrtümer",
+            "description": "Wir behalten uns ausdrücklich vor, Teile der Seiten oder das gesamte Angebot jederzeit zu ändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen. Sollten einzelne Formulierungen oder Darstellungen dieses Haftungsausschlusses unwirksam sein, bleiben die übrigen Bestimmungen davon unberührt."
+          }
+        }
+      }
+    },
+    "source": "Quelle:",
+    "sourceDescription": "Impressum mit dem Impressum-Generator von <a href=\"https://dartera.ch/\" target=\"_blank\">dartera</a> erstellt"
+  },
+  "legal": {
+    "title":"Rechtliche Hinweise",
+    "subTitle":"Urheberrecht und Nutzungshinweise",
+    "list": {
+      "l1": {
+        "title": "Allgemeiner Hinweis",
+        "desc": "Die Seite \"<i>Mischa Siegrist</i> / mischasiegrist.ch\" ist geistiges Eigentum von Siegrist Digital (<a href=\"https://siegristdigital.ch\"><u>https://siegristdigital.ch</u></a>). <br> © 2026 Siegrist Digital. Alle Rechte vorbehalten. Sämtliche auf dieser Website veröffentlichten Inhalte, insbesondere Texte, Fotografien, Grafiken und Illustrationen, unterliegen dem Schweizer Urheberrechtsgesetz sowie internationalen Abkommen."
+      },
+      "l2": {
+        "title": "Logos und Marken",
+        "desc": "Die auf dieser Website dargestellten Logos und Markenzeichen sind Eigentum von Siegrist Digital bzw. der jeweiligen Inhaber. Jede Vervielfältigung, Verbreitung oder öffentliche Wiedergabe dieser Logos – auch in abgewandelter Form – bedarf der vorherigen schriftlichen Zustimmung des Rechteinhabers."
+      },
+      "l3": {
+        "title": "Eigene Bilder und Medien",
+        "desc": "Alle verwendeten Fotografien und Bildmaterialien wurden von Siegrist Digital erstellt oder liegen uns zur exklusiven Nutzung vor. Eine Weiterverwendung dieser Bilder für eigene Zwecke (z. B. in sozialen Medien, Printprodukten oder auf anderen Websites) ist ohne ausdrückliche Genehmigung nicht gestattet."
+      },
+      "l4": {
+        "title": "Erlaubte Nutzung",
+        "desc": "Die Betrachtung und das Herunterladen von Inhalten für den rein privaten, nicht-kommerziellen Gebrauch sind gestattet. Jede darüber hinausgehende Nutzung, insbesondere die kommerzielle Verwertung, bedarf unserer vorherigen schriftlichen Einwilligung. Bei Fragen kontaktieren Sie uns bitte unter: <a href=\"mailto:info@mischasiegrist.ch\"><u>info@mischasiegrist.ch</u></a>"
+      }
+    },
+    "translationDisclaimer": "Alle übersetzungen auf dieser Seite wurden mithilfe von <a href=\"https://deepl.com\"><u>https://deepl.com</u></a> und KI durchgeführt. Bei fehlern, bitte über das Kontaktformular melden!"
   }
 }

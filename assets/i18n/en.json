@@ -100,5 +100,298 @@
     "legal": "Legal notice",
     "imprint": "Imprint",
     "privacy": "Privacy policy"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "toc": {
+      "title": "Table of Contents",
+      "item1": "Introduction and Scope",
+      "item2": "Data Controller",
+      "item3": "Definitions",
+      "item4": "Legal Basis",
+      "item5": "Types of Data Collected",
+      "item6": "Purposes of Data Processing",
+      "item7": "General Data Processing",
+      "item8": "Specific Data Processing (Third-Party Services)",
+      "item9": "Retention Periods",
+      "item10": "Data Security",
+      "item11": "Data Subject Rights",
+      "item12": "Updates and Contact"
+    },
+    "s1": {
+      "title": "1. Introduction and Scope",
+      "p1Html": "With this privacy policy, we comprehensively inform you about the type, scope, and purposes of the collection and use of your personal data by <strong>Mischa Siegrist</strong>.",
+      "p2": "This privacy policy applies to our website \"<i>Mischa Siegrist / mischasiegrist.ch</i>\" as well as to all associated online offers, services, and communication channels.",
+      "p3": "We take the protection of your personal data very seriously and treat your personal data confidentially and in accordance with Swiss data protection law, in particular the revised Federal Act on Data Protection (revFADP).",
+      "p4": "The use of our website is generally possible without providing personal data. Where personal data is collected on our pages, this is always done on a voluntary basis. This data will not be passed on to third parties without your express consent.",
+      "p5": "For individual or additional offers, special, supplementary, or further privacy policies as well as other legal documents such as General Terms and Conditions (GTC), Terms of Use, or Participation Conditions may apply."
+    },
+    "s2": {
+      "title": "2. Data Controller",
+      "intro": "The person responsible for data processing within the meaning of data protection legislation is:",
+      "address": "Mischa Siegrist <br> Wychelstrassee 44 <br> 3800 Matten b. Interlaken <br> Switzerland",
+      "contact": "Email: <a href=\"mailto:info@mischasiegrist.ch\">info@mischasiegrist.ch</a> <br> Website: <a href=\"https://mischasiegrist.ch\">mischasiegrist.ch</a>",
+      "questions": "If you have any questions regarding data protection, you can contact us at any time."
+    },
+    "s3": {
+      "title": "3. Definitions",
+      "intro": "To make this privacy policy understandable, we use the following definitions:",
+      "term1": "Personal Data",
+      "def1": "Any information relating to an identified or identifiable natural person. This includes, for example, name, address, email address, telephone number, or IP address.",
+      "term2": "Processing",
+      "def2": "Any operation or set of operations performed on personal data, whether or not by automated means, such as collection, recording, storage, use, alteration, disclosure, archiving, deletion, or destruction of data.",
+      "term3": "Data Subject",
+      "def3": "The natural person whose personal data is being processed.",
+      "term4": "Controller",
+      "def4": "The natural or legal person, authority, agency, or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data.",
+      "term5": "Processor",
+      "def5": "A natural or legal person, authority, agency, or other body which processes personal data on behalf of the controller.",
+      "term6": "Consent",
+      "def6": "Any freely given, specific, informed, and unambiguous indication of the data subject's wishes by which they, by a statement or by a clear affirmative action, signify agreement to the processing of personal data relating to them.",
+      "term7": "Cookies",
+      "def7": "Small text files stored on your device that may contain certain information. A distinction is made between session cookies (deleted after the browser session ends) and persistent cookies (stored for a defined period)."
+    },
+    "s4": {
+      "title": "4. Legal Basis",
+      "p1": "We process personal data in compliance with Swiss data protection law, in particular the revised Federal Act on Data Protection (revFADP) of September 25, 2020, and the Data Protection Ordinance (DPO).",
+      "p2": "Under Swiss law, the processing of personal data is generally permitted if:",
+      "li1": "no statutory prohibition exists",
+      "li2": "the data subject has consented",
+      "li3": "an overriding private or public interest exists",
+      "li4": "the processing is necessary for the performance of a contract",
+      "p3": "Stricter requirements apply to the processing of particularly sensitive personal data or to profiling with high risk."
+    },
+    "s5": {
+      "title": "5. Types of Data Collected",
+      "intro": "We collect and process various categories of personal data. Which specific data is collected depends on the respective services and functions you use.",
+      "overviewTitle": "Overview of Data Categories",
+      "thCategory": "Category",
+      "thExamples": "Examples",
+      "thDescription": "Description",
+      "row1Cat": "Master Data",
+      "row1Ex": "Name, First Name, Salutation, Title",
+      "row1Desc": "Basic personal information for identification",
+      "row2Cat": "Contact Data",
+      "row2Ex": "Email address, telephone number, postal address",
+      "row2Desc": "Information for contact and communication",
+      "row3Cat": "Technical Data",
+      "row3Ex": "IP address, browser type and version, operating system, device type, screen resolution",
+      "row3Desc": "Automatically collected information when using our website",
+      "row4Cat": "Usage Data",
+      "row4Ex": "Pages visited, duration of stay, click paths, access times",
+      "row4Desc": "Information about your user behavior on our website",
+      "row5Cat": "Content Data",
+      "row5Ex": "Text entries in forms, message content, files",
+      "row5Desc": "Information actively transmitted by you",
+      "sourcesTitle": "Data Sources",
+      "sourcesIntro": "The data is collected in various ways:",
+      "src1Html": "<strong>Directly from you:</strong> via input in forms, emails, registration",
+      "src2Html": "<strong>Automatically:</strong> through technical logging during website visits",
+      "src3Html": "<strong>From third parties:</strong> e.g., via payment service providers or advertising partners (if applicable)"
+    },
+    "s6": {
+      "title": "6. Purposes of Data Processing",
+      "intro": "We process your personal data for the following purposes:",
+      "thPurpose": "Purpose",
+      "thDescription": "Description",
+      "thBasis": "Legal Basis",
+      "row1Purpose": "Provision and operation of our website",
+      "row1Desc": "To make our website and its functions available to you",
+      "row1Basis": "Legitimate Interest",
+      "row2Purpose": "Ensuring IT security",
+      "row2Desc": "Protection of our systems against misuse, attacks, and technical disruptions",
+      "row2Basis": "Legitimate Interest",
+      "row3Purpose": "Processing contact requests",
+      "row3Desc": "To answer your inquiries and communicate with you",
+      "row3Basis": "Contract initiation / Legitimate Interest",
+      "row4Purpose": "Fulfillment of legal obligations",
+      "row4Desc": "To comply with statutory retention and documentation obligations",
+      "row4Basis": "Legal Obligation"
+    },
+    "s7": {
+      "title": "7. General Data Processing",
+      "formsTitle": "Contact Forms",
+      "formsIntro": "If you contact us via a contact form, the data you provide (name, email address, telephone number, message) will be processed and stored to handle your request.",
+      "formsDataHtml": "<strong>Processed Data:</strong> Name, email address, optional telephone number, message content",
+      "formsBasisHtml": "<strong>Legal Basis:</strong> Performance of a contract or contract initiation (Art. 31 Para. 2 lit. a revFADP) or Legitimate Interest (Art. 31 Para. 1 revFADP)",
+      "formsRetentionHtml": "<strong>Retention Period:</strong> The data will be deleted as soon as it is no longer necessary to achieve the purpose for which it was collected and no statutory retention obligations oppose this.",
+      "logsTitle": "Server Log Files",
+      "logsIntro": "Each time you access our website, technical data is automatically recorded in server log files. This is necessary for technical and security-related reasons.",
+      "logsDataHtml": "<strong>Processed Data:</strong> IP address, date and time of access, page/file accessed, amount of data transferred, browser type and version, operating system used, referrer URL, hostname of the accessing computer",
+      "logsBasisHtml": "<strong>Legal Basis:</strong> Legitimate Interest (Art. 31 Para. 1 revFADP) – Ensuring system security and error analysis",
+      "logsRetentionHtml": "<strong>Retention Period:</strong> The log files are automatically deleted after 30 days, unless longer retention is required for evidentiary purposes."
+    },
+    "s8": {
+      "title": "8. Specific Data Processing (Third-Party Services)",
+      "intro": "We use third-party services to operate, analyze, and improve our website. Below, we inform you in detail about the services used.",
+      "hostingTitle": "Hosting & Infrastructure",
+      "infomaniakTitle": "Infomaniak",
+      "labelProvider": "Provider:",
+      "valProvider": "Infomaniak Network SA",
+      "labelLocation": "Location:",
+      "valLocation": "Switzerland",
+      "labelPurpose": "Purpose:",
+      "valPurpose": "Swiss web hosting and cloud services",
+      "labelDataCategories": "Data Categories:",
+      "valDataCategories": "IP address, server logs, website data",
+      "labelBasis": "Legal Basis:",
+      "valBasis": "Performance of a contract",
+      "labelPrivacy": "Privacy Policy:"
+    },
+    "s9": {
+      "title": "9. Retention Periods",
+      "heading": "Retention Periods",
+      "intro": "We store your personal data only for as long as is necessary to fulfill the purposes for which it was collected or as required by statutory retention obligations.",
+      "principlesTitle": "General Principles",
+      "principlesIntro": "The retention period is determined by:",
+      "p1": "the purpose of data processing",
+      "p2": "statutory retention obligations",
+      "p3": "legitimate interests (e.g., defense against legal claims)",
+      "p4": "the type of data and the risk to data subjects",
+      "concreteTitle": "Specific Retention Periods",
+      "thCategory": "Data Category",
+      "thPeriod": "Retention Period",
+      "thBasis": "Basis",
+      "row1Cat": "Contact requests",
+      "row1Period": "12 months",
+      "row1Basis": "Purpose fulfillment / Legitimate Interest",
+      "row2Cat": "Server log files",
+      "row2Period": "30 days",
+      "row2Basis": "IT security",
+      "row3Cat": "Booking receipts / invoices",
+      "row3Period": "10 years",
+      "row3Basis": "Art. 958f CO (Swiss Law)",
+      "row4Cat": "Contracts and business correspondence",
+      "row4Period": "10 years after contract termination",
+      "row4Basis": "Art. 958f CO / Statute of limitations",
+      "legalTitle": "Statutory Retention Obligations (Switzerland)",
+      "legalIntro": "Under Swiss law, the following retention obligations apply in particular:",
+      "legalLi1Html": "<strong>Art. 958f CO:</strong> Accounting records and booking vouchers as well as the annual report and the audit report must be kept for ten years.",
+      "legalLi2": "Tax regulations may provide for additional retention obligations.",
+      "outro": "After the respective periods have expired, the data is routinely deleted unless it is still needed for other purposes."
+    },
+    "s10": {
+      "title": "10. Data Security",
+      "heading": "Data Security",
+      "p1": "We implement appropriate technical and organizational security measures (TOM) to protect your personal data against unauthorized access, loss, misuse, or destruction. The specific measures implemented depend on the current state of the art and are regularly reviewed and adapted.",
+      "p2": "Our security measures may include, depending on risk and protection needs:",
+      "li1": "Encrypted data transmission (e.g., TLS/SSL)",
+      "li2": "Access restrictions and authorization concepts",
+      "li3": "Protection of IT infrastructure through suitable security systems",
+      "li4": "Regular data backups",
+      "li5": "Maintenance and updating of our systems",
+      "li6": "Confidentiality obligations for employees",
+      "li7": "Careful selection and contractual binding of service providers",
+      "li8": "Processes for detecting and handling security incidents",
+      "restrictionTitle": "Limitation",
+      "restriction1": "Despite all precautionary measures, no data transmission over the Internet can be guaranteed to be completely secure.",
+      "restriction2": "In the event of a data breach that is likely to result in a high risk to your rights and freedoms, we will inform you without undue delay and notify the competent authorities."
+    },
+    "s11": {
+      "title": "11. Data Subject Rights",
+      "heading": "Your Rights (Data Subject Rights)",
+      "intro": "As a data subject, you have various rights regarding your personal data. These rights arise from the Swiss Data Protection Act (revFADP).",
+      "accessTitle": "Right of Access",
+      "accessText": "You have the right to request confirmation from us as to whether we are processing personal data concerning you. If this is the case, you have the right to access this data as well as further information such as processing purposes, categories of data, recipients, and planned storage duration.",
+      "correctionTitle": "Right to Rectification",
+      "correctionText": "You have the right to request the correction of inaccurate or the completion of incomplete personal data.",
+      "deletionTitle": "Right to Erasure (\"Right to be Forgotten\")",
+      "deletionText": "You have the right, under certain conditions, to request the deletion of your personal data. This applies in particular if the data is no longer necessary for the purposes for which it was collected or if you revoke your consent.",
+      "restrictionTitle": "Right to Restriction of Processing",
+      "restrictionText": "You have the right, under certain conditions, to request the restriction of the processing of your data, e.g., if you contest the accuracy of the data or the processing is unlawful.",
+      "portabilityTitle": "Right to Data Portability",
+      "portabilityText": "You have the right to receive the personal data concerning you, which you have provided to us, in a structured, commonly used, and machine-readable format and to transmit this data to another controller.",
+      "withdrawalTitle": "Right to Withdraw Consent",
+      "withdrawalText": "If processing is based on consent, you have the right to revoke this consent at any time with effect for the future.",
+      "complaintTitle": "Right to Lodge a Complaint",
+      "complaintText": "You have the right to lodge a complaint with the Federal Data Protection and Information Commissioner (FDPIC):",
+      "edoebName": "Federal Data Protection and Information Commissioner (FDPIC)",
+      "edoebStreet": "Feldeggweg 1",
+      "edoebCity": "CH-3003 Bern",
+      "edoebPhone": "Tel.: +41 58 462 43 95",
+      "edoebWebsite": "Website:",
+      "exerciseTitle": "Exercising Your Rights",
+      "exerciseIntro": "To exercise your rights, you can contact us at any time:",
+      "exerciseEmail": "Email:",
+      "exerciseOutro": "To process your request, we require proof of identity to ensure that the request comes from the authorized person. We usually process your request within one month."
+    },
+    "s12": {
+      "title": "12. Updates and Contact",
+      "updateTitle": "Updates to this Privacy Policy",
+      "p1": "We may adapt and update this privacy policy from time to time to reflect changes in our data processing practices, new legal requirements, or other developments.",
+      "p2": "Changes will be published on our website. In the event of significant changes affecting your rights or the type of data processing, we will inform you separately – where possible and appropriate.",
+      "p3": "We recommend that you review this privacy policy regularly to stay informed about the current status of our data protection practices.",
+      "contactTitle": "Contact for Questions",
+      "contactIntro": "If you have any questions about this privacy policy or the processing of your personal data, you can contact us at any time:",
+      "contactName": "Mischa Siegrist",
+      "contactEmail": "Email: <a href=\"mailto:info@mischasiegrist.ch\">info@mischasiegrist.ch</a>",
+      "statusLabel": "Status of this Privacy Policy:",
+      "statusDate": "13.04.2026"
+    },
+    "privacyFooter": {
+      "generatorHtml": "This privacy policy was created with the Privacy Policy Generator by <a href=\"https://dartera.ch\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>dartera</strong></a>.",
+      "statusLabel": "Status:",
+      "statusDate": "13.04.2026"
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "blocks": {
+      "b2": {
+        "subTitle": "Authorized Representative",
+        "description": ""
+      },
+      "b3": {
+        "subTitle": "Contact",
+        "description": ""
+      },
+      "b4": {
+        "subTitle": "Disclaimer",
+        "description": "",
+        "list": {
+          "l1": {
+            "title": "Content",
+            "description": "Despite careful content control, we assume no liability for the accuracy, completeness, or timeliness of the information provided. Any liability claims against us relating to damages of a material or non-material nature caused by the use or non-use of the content presented or by the use of incorrect and incomplete information are fundamentally excluded."
+          },
+          "l2": {
+            "title": "External Links",
+            "description": "Our website contains links to external third-party websites over whose content we have no influence. Therefore, we assume no liability for such external content. The respective provider or operator of the pages is always responsible for the content of the linked pages."
+          },
+          "l3": {
+            "title": "Copyright",
+            "description": "The content and works created by the site operators on this website are subject to Swiss copyright law. Contributions by third parties are marked as such. Any reproduction, editing, distribution, and any type of exploitation outside the limits of copyright law require our written consent."
+          },
+          "l4": {
+            "title": "Changes and Errors",
+            "description": "We expressly reserve the right to change, supplement, or delete parts of the pages or the entire offer at any time, or to temporarily or permanently suspend publication. Should individual formulations or representations of this disclaimer be ineffective, the remaining provisions shall remain unaffected."
+          }
+        }
+      }
+    },
+    "source": "Source:",
+    "sourceDescription": "Imprint created with the Imprint Generator by <a href=\"https://dartera.ch/\" target=\"_blank\">dartera</a>"
+  },
+  "legal": {
+    "title":"Legal notice",
+    "subTitle":"Copyright and Terms of Use",
+    "list": {
+      "l1": {
+        "title": "General Notice",
+        "desc": "The page \"<i>Mischa Siegrist</i> / mischasiegrist.ch\" is the intellectual property of Siegrist Digital (<a href=\"https://siegristdigital.ch\"><u>https://siegristdigital.ch</u></a>). <br> © 2026 Siegrist Digital. All rights reserved. All content published on this website, in particular texts, photographs, graphics, and illustrations, is subject to the Swiss Copyright Act and international agreements."
+      },
+      "l2": {
+        "title": "Logos and Trademarks",
+        "desc": "The logos and trademarks displayed on this website are the property of Siegrist Digital or their respective owners. Any reproduction, distribution, or public display of these logos, even in modified form, requires the prior written consent of the rights holder."
+      },
+      "l3": {
+        "title": "Own Images and Media",
+        "desc": "All photographs and image materials used have been created by Siegrist Digital or are available to us for exclusive use. Further use of these images for your own purposes (e.g., in social media, print products, or on other websites) is not permitted without express authorization."
+      },
+      "l4": {
+        "title": "Permitted Use",
+        "desc": "Viewing and downloading content for purely private, non-commercial use is permitted. Any use beyond this, in particular commercial exploitation, requires our prior written consent. If you have any questions, please contact us at: <a href=\"mailto:info@mischasiegrist.ch\"><u>info@mischasiegrist.ch</u></a>"
+      }
+    },
+    "translationDisclaimer": "All translations on this page were carried out using <a href=\"https://deepl.com\"><u>https://deepl.com</u></a> and AI. Please report any errors via the contact form!"
   }
 }
