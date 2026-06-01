@@ -15,6 +15,16 @@ let cooldownInterval = null;
 
 const tx = (key, fallback) => (typeof t === 'function' && t(key)) || fallback;
 
+const path = window.location.pathname;
+const legalPaths = [
+  "/privacy.html",
+  "privacy.html",
+  "/legal.html",
+  "legal.html",
+  "/imprint.html",
+  "imprint.html",
+];
+
 function init() {
     footerYear.innerText = date.getFullYear();
     restoreFormData();
@@ -138,17 +148,19 @@ function resetField(f) {
     f.closest('.form-field')?.classList.remove('is-valid', 'is-invalid');
 }
 
-document.querySelector('#to-skills button').addEventListener('click', () => {
-    document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
-});
+if (!legalPaths.includes(path)) {
+    document.querySelector('#to-skills button').addEventListener('click', () => {
+        document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+    });
 
-document.querySelector('#to-portfolio button').addEventListener('click', () => {
-    document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
-});
+    document.querySelector('#to-portfolio button').addEventListener('click', () => {
+        document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' });
+    });
 
-document.querySelector('#to-contact button').addEventListener('click', () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-});
+    document.querySelector('#to-contact button').addEventListener('click', () => {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+}
 
 fields.forEach(field => {
     field.addEventListener('blur', () => validateField(field));
