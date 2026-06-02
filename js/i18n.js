@@ -26,6 +26,8 @@ const I18N = {
     current: null,
 };
 
+let captchaId = null;
+
 /**
  * Resolve a dotted key path against the loaded translations.
  * Returns undefined if not found.
@@ -121,6 +123,7 @@ async function switchLanguage(lang) {
 
     // Let other scripts react (e.g. for re-rendering dynamic content)
     document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
+    renderCaptcha(detectInitialLanguage());
 }
 
 // Boot
@@ -132,3 +135,20 @@ document.addEventListener('DOMContentLoaded', () => {
 window.switchLanguage = switchLanguage;
 window.getCurrentLanguage = getCurrentLanguage;
 window.t = t;
+
+
+function renderCaptcha(lang) {
+    const el = document.getElementById('hcaptcha-container');
+    if (captchaId !== null) {
+        hcaptcha.remove(captchaId); // altes Widget entfernen
+    }
+    captchaId = hcaptcha.render(el, {
+        sitekey: 'ebba1710-83a6-4e3e-b424-677cc038ed60',
+        hl: lang,
+        size: 'compact'
+    });
+}
+
+function onHcaptchaLoad() {
+    renderCaptcha(detectInitialLanguage());
+}
