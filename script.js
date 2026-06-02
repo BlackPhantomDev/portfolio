@@ -215,3 +215,8 @@ document.addEventListener('keydown', (e) => {
         closeNavbar();
     }
 });
+
+document.querySelectorAll('.arrow-to-next-section').forEach(section => {
+    const arrow = section.querySelector('.go-to-next-section');
+    section.addEventListener('mouseenter', () => arrow.classList.add('revealed'), { once: true });
+});

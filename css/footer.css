@@ -258,10 +258,25 @@ footer {
     transform: rotate(180deg);
     width: 32px;
     height: auto;
+    overflow: visible;
 }
 
-#arrow-back-to-top svg path {
-    stroke: #fff;
+.btt-shaft {
+    transform-box: fill-box;
+    transform-origin: top;
+    transition: transform .2s ease-in-out;
+}
+
+.btt-head {
+    transition: transform .2s ease-in-out;
+}
+
+#arrow-back-to-top:hover .btt-shaft {
+    transform: scaleY(1.2);
+}
+
+#arrow-back-to-top:hover .btt-head {
+    transform: translateY(20px);
 }
 
 #footer-links {

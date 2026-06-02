@@ -57,8 +57,27 @@ nav, #hero, #about, #skills, #portfolio, #references, .arrow-to-next-section {
     gap: 16px;
 }
 
+#scroll-arrow-window {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    line-height: 0;
+}
+
 #scroll-arrow {
-    width: 50px;
+    display: inline-block;
+    animation: scrollArrowLoop 2s linear infinite;
+}
+
+@keyframes scrollArrowLoop {
+    0%   { transform: translateY(-90%); }
+    100% { transform: translateY(500%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #scroll-arrow {
+        animation: none;
+    }
 }
 
 #about {
