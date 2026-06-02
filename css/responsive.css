@@ -95,6 +95,16 @@
         margin: 48px 0;
     }
 
+    #nav-left {
+        width: auto;
+    }
+
+    #nav-right {
+        justify-content: space-between;
+        gap: unset;
+        width: calc(50% + 50px);
+    }
+
     #nav-overlay {
         height: 100%;
     }
@@ -136,9 +146,6 @@
 
     #nav-logo {
         width: 46px;
-    }
-    #nav-right {
-        gap: 20px;
     }
 
     #hero-subtitle {
@@ -263,9 +270,7 @@
     #nav-logo {
         width: 40px;
     }
-    #nav-right {
-        gap: 14px;
-    }
+
     #lang-switch {
         gap: 8px;
     }

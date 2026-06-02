@@ -8,7 +8,7 @@
 :root {
     --background-color: #FFFCF3;
     --highlighted: #00BC8F;
-    --diag: 130px;
+    --diag: 60px;
 }
 
 html {

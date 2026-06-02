@@ -4,7 +4,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% var(--diag), 100% 100%, 0% 100%);
     background-color: black;
     font-family: SourceSans3;
 }
