@@ -102,6 +102,7 @@
     "privacy": "Datenschutzerklärung"
   },
   "privacy": {
+    "pageTitle":"Datenschutzerklärung | Mischa Siegrist",
     "title": "Datenschutz\u00aderklärung",
     "toc": {
       "title": "Inhaltsverzeichnis",
@@ -335,6 +336,7 @@
     }
   },
   "imprint": {
+    "pageTitle":"Impressum | Mischa Siegrist",
     "title": "Impressum",
     "blocks": {
       "b2": {
@@ -372,6 +374,7 @@
     "sourceDescription": "Impressum mit dem Impressum-Generator von <a href=\"https://dartera.ch/\" target=\"_blank\">dartera</a> erstellt"
   },
   "legal": {
+    "pageTitle":"Rechtliche Hinweise | Mischa Siegrist",
     "title":"Rechtliche Hinweise",
     "subTitle":"Urheberrecht und Nutzungshinweise",
     "list": {

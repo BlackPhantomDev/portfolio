@@ -102,6 +102,7 @@
     "privacy": "Privacy policy"
   },
   "privacy": {
+    "pageTitle":"Privacy policy | Mischa Siegrist",
     "title": "Privacy Policy",
     "toc": {
       "title": "Table of Contents",
@@ -335,6 +336,7 @@
     }
   },
   "imprint": {
+    "pageTitle":"Imprint | Mischa Siegrist",
     "title": "Imprint",
     "blocks": {
       "b2": {
@@ -372,6 +374,7 @@
     "sourceDescription": "Imprint created with the Imprint Generator by <a href=\"https://dartera.ch/\" target=\"_blank\">dartera</a>"
   },
   "legal": {
+    "pageTitle":"Legal notice | Mischa Siegrist",
     "title":"Legal notice",
     "subTitle":"Copyright and Terms of Use",
     "list": {
