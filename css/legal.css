@@ -69,7 +69,7 @@
 
 #legal-content address {
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -82,7 +82,6 @@
 
 .legal-list {
     list-style-type: decimal;
-    padding-left: 22px;
 }
 .legal-list li strong { font-weight: 800; }
 
@@ -158,3 +157,6 @@
     background-color: rgba(0, 0, 0, 0.03);
 }
 
+#legal-content ol {
+    list-style-position: inside;
+}
