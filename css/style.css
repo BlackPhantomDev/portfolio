@@ -146,10 +146,31 @@ nav, #hero, #about, #skills, #portfolio, #references, .arrow-to-next-section {
 }
 
 #about-right img {
+    display: block;
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: cover;
 }
+
+#about-portrait-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#about-right:hover #about-portrait-wrapper::after {
+    opacity: 1;
+}
+
+#about-right #about-portrait-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 15px -15px -15px 15px;
+    border: 4px solid #000;
+    pointer-events: none;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+}
+
 
 #to-skills {
     justify-content: flex-end;

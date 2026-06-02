@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <script src="./js/early-lang.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio | First Name </title>
+        <title>Portfolio | Mischa Siegrist </title>
         <link rel="stylesheet" href="./main.css">
         <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
     </head>
@@ -95,7 +95,9 @@
                     </div>
                 </div>
                 <div id="about-right">
-                    <img src="./assets/img/portrait.png" alt="Portrait" data-i18n-attr="alt:about.portraitAlt">
+                    <div id="about-portrait-wrapper">
+                        <img src="./assets/img/portrait.png" alt="Portrait" data-i18n-attr="alt:about.portraitAlt">
+                    </div>
                 </div>
             </div>
         </section>
@@ -369,7 +371,7 @@
                         </div>
                         <br><br>
                         <div id="form-captcha">
-                            <div class="h-captcha" data-sitekey="ebba1710-83a6-4e3e-b424-677cc038ed60"></div>
+                            <div id="hcaptcha-container"></div>
                         </div>
                         <br><br>
                         <div id="form-errors">
@@ -392,7 +394,7 @@
                 <div id="footer-links">
                     <div id="footer-links-left">
                         <img src="./assets/img/logo-footer.svg" alt="Logo" data-i18n-attr="alt:footer.logoAlt">
-                        <p><span data-i18n="footer.copyright">© First Name</span> <span id="footer-year"></span></p>
+                        <p><span data-i18n="footer.copyright">© Mischa Siegrist</span> <span id="footer-year"></span></p>
                     </div>
                     <div id="footer-links-right">
                         <div id="footer-links-right-icons">
@@ -411,7 +413,7 @@
 
         </footer>
     </body>
-    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <script src="./js/i18n.js"></script>
     <script src="./script.js"></script>
+    <script src="https://js.hcaptcha.com/1/api.js?onload=onHcaptchaLoad&render=explicit" async defer></script>
 </html>
