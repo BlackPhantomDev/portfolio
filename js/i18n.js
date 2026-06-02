@@ -1,24 +1,32 @@
-/* ============================================================
-   i18n.js – simple client-side translation helper
-   ============================================================
-   Supports three attribute styles:
+/**
+ * @file i18n.js
+ *
+ * Simple client-side translation helper.
+ *
+ * Supports three attribute styles on DOM elements:
+ *
+ * 1. `data-i18n="key.path"` — replaces `element.textContent`.
+ * 2. `data-i18n-html="key.path"` — replaces `element.innerHTML` (use for
+ *    translations that contain inline HTML such as `<br>` or `<a>`).
+ * 3. `data-i18n-attr="placeholder:key.path, title:key.other"` — replaces one or
+ *    more attributes (comma-separated).
+ *
+ * Public API exposed on `window`:
+ * - {@link switchLanguage} — load and apply a language.
+ * - {@link getCurrentLanguage} — return the active language code.
+ * - {@link t} — look up a translation in JS.
+ */
 
-   1) data-i18n="key.path"
-      → replaces element.textContent
-
-   2) data-i18n-html="key.path"
-      → replaces element.innerHTML (use for translations
-        that contain inline HTML like <br> or <a>)
-
-   3) data-i18n-attr="placeholder:key.path, title:key.other"
-      → replaces one or more attributes (comma-separated)
-
-   Public API:
-      switchLanguage(lang)   – load + apply a language
-      getCurrentLanguage()   – returns 'de' | 'en'
-      t(key)                 – lookup a translation in JS
-   ============================================================ */
-
+/**
+ * Global i18n state container.
+ *
+ * @type {{
+ *   supported: string[],
+ *   fallback: string,
+ *   translations: Object,
+ *   current: (string|null)
+ * }}
+ */
 const I18N = {
     supported: ['de', 'en'],
     fallback: 'en',
@@ -26,22 +34,38 @@ const I18N = {
     current: null,
 };
 
+/**
+ * Id of the currently rendered hCaptcha widget, or `null` if none is rendered.
+ *
+ * @type {?number}
+ */
 let captchaId = null;
 
 /**
- * Resolve a dotted key path against the loaded translations.
- * Returns undefined if not found.
+ * Resolve a dotted key path (e.g. `"contact.submit"`) against the loaded
+ * translations object.
+ *
+ * @param {string} key - Dot-separated path into the translations object.
+ * @returns {*} The translated value, or `undefined` if the path does not exist.
  */
 function t(key) {
     return key.split('.').reduce((obj, k) => (obj == null ? obj : obj[k]), I18N.translations);
 }
 
+/**
+ * Get the currently active language code.
+ *
+ * @returns {('de'|'en'|null)} The active language, or `null` if none is loaded yet.
+ */
 function getCurrentLanguage() {
     return I18N.current;
 }
 
 /**
- * Detect initial language: localStorage → <html lang> → browser → fallback
+ * Detect the initial language using the priority order:
+ * `localStorage` → `<html lang>` → browser language → fallback.
+ *
+ * @returns {string} A supported language code.
  */
 function detectInitialLanguage() {
     const saved = localStorage.getItem('lang');
@@ -57,22 +81,25 @@ function detectInitialLanguage() {
 }
 
 /**
- * Apply translations to the entire DOM.
+ * Apply translations to every element within the given root that carries an
+ * i18n attribute. Handles `data-i18n` (textContent), `data-i18n-html`
+ * (innerHTML), `data-i18n-attr` (one or more attributes) and the document
+ * `<title>` via a `data-i18n-title` attribute on the root element.
+ *
+ * @param {(Document|Element)} [root=document] - Subtree within which to apply translations.
+ * @returns {void}
  */
 function applyTranslations(root = document) {
-    // textContent
     root.querySelectorAll('[data-i18n]').forEach(el => {
         const value = t(el.getAttribute('data-i18n'));
         if (value != null) el.textContent = value;
     });
 
-    // innerHTML (for translations containing inline markup)
     root.querySelectorAll('[data-i18n-html]').forEach(el => {
         const value = t(el.getAttribute('data-i18n-html'));
         if (value != null) el.innerHTML = value;
     });
 
-    // attribute translations: "attr:key, attr:key"
     root.querySelectorAll('[data-i18n-attr]').forEach(el => {
         el.getAttribute('data-i18n-attr').split(',').forEach(pair => {
             const [attr, key] = pair.split(':').map(s => s.trim());
@@ -81,7 +108,6 @@ function applyTranslations(root = document) {
         });
     });
 
-    // <title> tag
     const titleKey = document.documentElement.getAttribute('data-i18n-title');
     if (titleKey) {
         const value = t(titleKey);
@@ -90,7 +116,10 @@ function applyTranslations(root = document) {
 }
 
 /**
- * Update the visual state of the language switcher.
+ * Update the visual selected state of the language switcher buttons.
+ *
+ * @param {string} lang - The language code that should appear selected.
+ * @returns {void}
  */
 function updateSwitcherUI(lang) {
     document.querySelectorAll('.lang-switch-option').forEach(opt => {
@@ -100,7 +129,13 @@ function updateSwitcherUI(lang) {
 }
 
 /**
- * Load a language file and apply it. Exposed globally.
+ * Load a language file, persist the choice, apply translations and notify other
+ * scripts via a `languagechange` event. Falls back to the default language for
+ * unsupported codes and returns early if loading fails. Exposed globally as
+ * `window.switchLanguage`.
+ *
+ * @param {string} lang - The language code to switch to.
+ * @returns {Promise<void>} Resolves once translations have been applied.
  */
 async function switchLanguage(lang) {
     if (!I18N.supported.includes(lang)) lang = I18N.fallback;
@@ -121,26 +156,29 @@ async function switchLanguage(lang) {
     applyTranslations();
     updateSwitcherUI(lang);
 
-    // Let other scripts react (e.g. for re-rendering dynamic content)
     document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
     renderCaptcha(detectInitialLanguage());
 }
 
-// Boot
 document.addEventListener('DOMContentLoaded', () => {
     switchLanguage(detectInitialLanguage());
 });
 
-// Expose for inline onclick handlers and other scripts
 window.switchLanguage = switchLanguage;
 window.getCurrentLanguage = getCurrentLanguage;
 window.t = t;
 
-
+/**
+ * Render (or re-render) the hCaptcha widget in the given language, removing any
+ * previously rendered instance first.
+ *
+ * @param {string} lang - Language code passed to hCaptcha's `hl` option.
+ * @returns {void}
+ */
 function renderCaptcha(lang) {
     const el = document.getElementById('hcaptcha-container');
     if (captchaId !== null) {
-        hcaptcha.remove(captchaId); // altes Widget entfernen
+        hcaptcha.remove(captchaId);
     }
     captchaId = hcaptcha.render(el, {
         sitekey: 'ebba1710-83a6-4e3e-b424-677cc038ed60',
@@ -149,6 +187,12 @@ function renderCaptcha(lang) {
     });
 }
 
+/**
+ * hCaptcha `onload` callback. Renders the widget using the detected initial
+ * language.
+ *
+ * @returns {void}
+ */
 function onHcaptchaLoad() {
     renderCaptcha(detectInitialLanguage());
 }

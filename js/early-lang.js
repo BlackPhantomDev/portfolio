@@ -1,12 +1,16 @@
-/* ============================================================
-   early-lang.js – sets <html lang> before the browser decides
-   ============================================================
-   MUST be loaded synchronously in the <head> (no defer/async)
-   and BEFORE any rendering happens. Mirrors the detection
-   logic in i18n.js so the browser sees the correct language
-   from the very first paint — preventing the "translate this
-   page?" prompt when the user has German preferences.
-   ============================================================ */
+/**
+ * @file early-lang.js
+ *
+ * Sets the document's `lang` attribute before the browser's first paint, so the
+ * browser sees the correct language from the very first render. This prevents
+ * the browser's "translate this page?" prompt from appearing for users whose
+ * preferred language already matches the page.
+ *
+ * Must be loaded synchronously in the `<head>` (no `defer`/`async`) and before
+ * any rendering happens. The detection logic mirrors {@link detectInitialLanguage}
+ * in i18n.js. If `localStorage` is unavailable, the document language is left
+ * untouched and the default applies.
+ */
 (function () {
     try {
         var supported = ['de', 'en'];
@@ -16,5 +20,7 @@
                  : supported.indexOf(browser) !== -1 ? browser
                  : 'en';
         document.documentElement.lang = lang;
-    } catch (e) { /* localStorage blocked – fall back to default */ }
+    } catch (e) {
+        /* no-op */
+    }
 })();
