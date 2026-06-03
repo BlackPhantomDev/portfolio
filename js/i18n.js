@@ -172,15 +172,22 @@ window.t = t;
  * Render (or re-render) the hCaptcha widget in the given language, removing any
  * previously rendered instance first.
  *
+ * No-op if the page has no captcha container or if the hCaptcha library has not
+ * loaded yet; in the latter case the initial render is handled by
+ * {@link onHcaptchaLoad} once the library is ready.
+ *
  * @param {string} lang - Language code passed to hCaptcha's `hl` option.
  * @returns {void}
  */
 function renderCaptcha(lang) {
-    const el = document.getElementById('hcaptcha-container');
+    const captchaContainer = document.getElementById('hcaptcha-container');
+    // Abbrechen, wenn es keinen Container gibt oder hCaptcha noch nicht geladen ist
+    if (!captchaContainer || typeof hcaptcha === 'undefined') return;
+
     if (captchaId !== null) {
         hcaptcha.remove(captchaId);
     }
-    captchaId = hcaptcha.render(el, {
+    captchaId = hcaptcha.render(captchaContainer, {
         sitekey: 'ebba1710-83a6-4e3e-b424-677cc038ed60',
         hl: lang,
         size: 'compact'
