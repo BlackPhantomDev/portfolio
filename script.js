@@ -59,6 +59,69 @@ let cooldownInterval = null;
 const tx = (key, fallback) => (typeof t === 'function' && t(key)) || fallback;
 
 /**
+ * Maps the (German) error strings returned by the mailer backend onto
+ * language-neutral i18n keys, so the displayed message follows the active page
+ * language instead of the backend's wording.
+ *
+ * The backend always responds with HTTP 200, so the only distinguishing
+ * information is the `error` string itself — hence the string-keyed lookup.
+ * Keys are looked up after trimming, because some backend strings carry
+ * trailing whitespace (e.g. the rate-limit message).
+ *
+ * @type {Object<string, string>}
+ */
+const BACKEND_ERROR_MAP = {
+    'Konfiguration nicht gefunden.':                          'contact.errors.configMissing',
+    'Methode nicht erlaubt.':                                 'contact.errors.methodNotAllowed',
+    'Bitte warte einen Moment, bevor du erneut sendest.':     'contact.errors.rateLimit',
+    'Name zu kurz.':                                          'contact.errors.nameShort',
+    'Name zu lang.':                                          'contact.errors.nameLong',
+    'E-Mail fehlt.':                                          'contact.errors.emailMissing',
+    'E-Mail-Adresse zu lang.':                                'contact.errors.emailLong',
+    'Ungültige E-Mail-Adresse.':                              'contact.errors.emailInvalid',
+    'Betreff zu kurz.':                                       'contact.errors.subjectShort',
+    'Betreff zu lang.':                                       'contact.errors.subjectLong',
+    'Nachricht zu kurz.':                                     'contact.errors.messageShort',
+    'Nachricht zu lang.':                                     'contact.errors.messageLong',
+    'Ungültige Telefonnummer.':                               'contact.errors.phoneInvalid',
+    'Captcha fehlt.':                                         'contact.errors.captchaMissing',
+    'Captcha-Verifikation nicht erreichbar.':                 'contact.errors.captchaUnreachable',
+    'Captcha-Prüfung fehlgeschlagen.':                        'contact.errors.captchaFailed',
+    'Versand fehlgeschlagen. Bitte später erneut versuchen.': 'contact.errors.sendFailed',
+};
+
+/**
+ * Translate a backend error string into a localized message. Falls back to a
+ * generic localized message (and logs a console warning) for any string not
+ * present in {@link BACKEND_ERROR_MAP}.
+ *
+ * @param {string} [backendMsg] - The raw `error` string from the backend.
+ * @returns {string} A localized, user-facing error message.
+ */
+function mapBackendError(backendMsg) {
+    const key = BACKEND_ERROR_MAP[(backendMsg || '').trim()];
+    if (key) return tx(key, backendMsg);
+    console.warn('[form] unmapped backend error:', backendMsg);
+    return tx('contact.errors.generic', backendMsg || 'Something went wrong.');
+}
+
+/**
+ * Raw backend error strings for which NO cooldown should be started. The mailer
+ * rejects these BEFORE it writes its rate-limit timestamp (the config and
+ * method checks run ahead of the rate-limit logic), so no server-side timer is
+ * ticking and an immediate retry is legitimate. Every other outcome — all
+ * validation/captcha/send errors and success — happens AFTER the timestamp is
+ * written, meaning the 30s rate window is already running and the button must
+ * lock to match it.
+ *
+ * @type {Set<string>}
+ */
+const NO_COOLDOWN_ERRORS = new Set([
+    'Konfiguration nicht gefunden.',
+    'Methode nicht erlaubt.',
+]);
+
+/**
  * Current page path, used to skip section-scroll wiring on legal pages.
  * @type {string}
  */
@@ -199,9 +262,44 @@ function hideFormMessages() {
 }
 
 /**
+ * Reset the hCaptcha widget, if the hCaptcha library is present.
+ *
+ * @returns {void}
+ */
+function resetCaptcha() {
+    if (typeof hcaptcha !== 'undefined') hcaptcha.reset();
+}
+
+/**
+ * Display a handled backend error, reset the captcha and start the cooldown
+ * unless the mailer rejected the request before stamping its rate timer.
+ *
+ * @param {{success: boolean, error?: string}} result - The parsed backend response.
+ * @returns {void}
+ */
+function handleBackendError(result) {
+    showFormMessage('error', mapBackendError(result.error));
+    resetCaptcha();
+    if (!NO_COOLDOWN_ERRORS.has((result.error || '').trim())) startCooldown();
+}
+
+/**
+ * Restore the submit button to its default disabled/idle state, unless a
+ * cooldown is currently counting down.
+ *
+ * @returns {void}
+ */
+function restoreSubmitButton() {
+    if (cooldownInterval) return;
+    submitBtn.classList.add('disabled');
+    submitBtn.value = tx('contact.submit', 'Send message');
+}
+
+/**
  * Handle the submit click: prevent default submission, send the form data and
- * either show success or surface an error. Resets the captcha on failure and
- * restores the button label unless a cooldown has started.
+ * delegate to the success or backend-error handler. Network and parse errors
+ * are surfaced as a message with the captcha reset; the button state is
+ * restored in all cases unless a cooldown has started.
  *
  * @param {Event} e - The triggering click/submit event.
  * @returns {Promise<void>}
@@ -209,21 +307,17 @@ function hideFormMessages() {
 async function submitForm(e) {
     e.preventDefault();
     if (submitBtn.classList.contains('disabled')) return;
-    e.preventDefault();
     hideFormMessages();
     submitBtn.value = tx('contact.sending', 'Sending...');
     try {
         const result = await sendFormData();
-        if (!result.success) throw new Error(result.error || 'Versand fehlgeschlagen.');
-        handleSuccess();
+        if (result.success) handleSuccess();
+        else handleBackendError(result);
     } catch (err) {
         showFormMessage('error', err.message || String(err));
-        if (typeof hcaptcha !== 'undefined') hcaptcha.reset();
+        resetCaptcha();
     } finally {
-        if (!cooldownInterval) {
-            submitBtn.classList.add('disabled');
-            submitBtn.value = tx('contact.submit', 'Send message');
-        }
+        restoreSubmitButton();
     }
 }
 
@@ -242,10 +336,7 @@ async function sendFormData() {
     try {
         return JSON.parse(text);
     } catch {
-        if (!result.success) {
-            currentError = { backend: result.error };
-            throw new Error(mapBackendError(result.error));
-        }
+        throw new Error(tx('contact.errors.generic', 'Server error. Please try again later.'));
     }
 }
 
@@ -257,7 +348,7 @@ async function sendFormData() {
  */
 function handleSuccess() {
     contactForm.querySelectorAll('input, textarea').forEach(resetField);
-    if (typeof hcaptcha !== 'undefined') hcaptcha.reset();
+    resetCaptcha();
     showFormMessage('success');
     clearFormStorage();
     startCooldown();
@@ -299,6 +390,17 @@ checkbox.addEventListener('change', updateSubmitButton);
 submitBtn.addEventListener('click', submitForm);
 
 /**
+ * Set the submit button label to the localized cooldown text for the given
+ * number of seconds remaining.
+ *
+ * @param {number} seconds - Seconds left in the cooldown.
+ * @returns {void}
+ */
+function setCooldownLabel(seconds) {
+    submitBtn.value = tx('contact.cooldown', `Wait ${seconds}s...`).replace('{seconds}', seconds);
+}
+
+/**
  * Start the post-submit cooldown: disable the button and count down the
  * remaining seconds, restoring the submit label and re-evaluating button state
  * when it finishes.
@@ -308,8 +410,7 @@ submitBtn.addEventListener('click', submitForm);
 function startCooldown() {
     let remaining = COOLDOWN_SECONDS;
     submitBtn.classList.add('disabled');
-    submitBtn.value = tx('contact.cooldown', `Wait ${remaining}s...`).replace('{seconds}', remaining);
-
+    setCooldownLabel(remaining);
     cooldownInterval = setInterval(() => {
         remaining--;
         if (remaining <= 0) {
@@ -318,7 +419,7 @@ function startCooldown() {
             submitBtn.value = tx('contact.submit', 'Send message');
             updateSubmitButton();
         } else {
-            submitBtn.value = tx('contact.cooldown', `Wait ${remaining}s...`).replace('{seconds}', remaining);
+            setCooldownLabel(remaining);
         }
     }, 1000);
 }
