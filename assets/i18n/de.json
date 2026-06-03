@@ -11,7 +11,7 @@
   },
   "about": {
     "title": "Über mich",
-    "description": "Schreibe hier ein paar Informationen über dich mit IT-Bezug. Warum brennst du für das Coden? Zeige Lust, neue Technologien zu lernen.<br>Ergänze eine kurze Beschreibung deines Problemlösungsansatzes. Du kannst Eigenschaften wie analytisches Denken, Kreativität, Ausdauer und Teamfähigkeit nennen.",
+    "description": "Hey, ich bin Mischa – Frontend-Entwickler mit einer Leidenschaft für sauberen Code und nutzerzentriertes Design. <br><br> Für mich ist Programmieren mehr als nur Technik: Es ist die Kunst, komplexe Anforderungen in intuitive, performante und ästhetisch ansprechende Benutzeroberflächen zu verwandeln. Mein Fundament bilden solide Kenntnisse in HTML, CSS und JavaScript (OOP). Derzeit vertiefe ich mich intensiv in TypeScript und Angular, um meine Projekte noch skalierbarer und zukunftssicherer zu machen. <br><br> Ich liebe es, an der Schnittstelle zwischen Technik und Design zu arbeiten und Lösungen zu schaffen, die nicht nur funktionieren, sondern Nutzer wirklich begeistern. Offener Austausch und iterative Entwicklung sind für mich dabei der Schlüssel zum besten Ergebnis.",
     "houseIconAlt": "Haus-Icon",
     "location": "Wohnhaft in Interlaken",
     "laptopIconAlt": "Laptop-Icon",

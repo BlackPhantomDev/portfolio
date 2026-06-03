@@ -11,7 +11,7 @@
   },
   "about": {
     "title": "About me",
-    "description": "Write some information about yourself that is IT related. Why are you passionate about coding? Show a desire to learn new technologies.<br>Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.",
+    "description": "Hey, I'm Mischa – a front-end developer with a passion for clean code and user-centered design. <br><br> For me, programming is more than just technology: it's the art of transforming complex requirements into intuitive, high-performance, and aesthetically pleasing user interfaces. My foundation is built on a solid understanding of HTML, CSS, and JavaScript (OOP). I’m currently diving deep into TypeScript and Angular to make my projects even more scalable and future-proof. <br><br> I love working at the intersection of technology and design and creating solutions that not only work but truly delight users. For me, open communication and iterative development are the keys to achieving the best results.",
     "houseIconAlt": "House icon",
     "location": "Based in Interlaken",
     "laptopIconAlt": "Laptop icon",

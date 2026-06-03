@@ -92,7 +92,7 @@ nav, #hero, #about, #skills, #portfolio, #references, .arrow-to-next-section {
 #about-wrapper {
     display: flex;
     flex: 1;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #about-left, #about-right {
@@ -138,7 +138,6 @@ nav, #hero, #about, #skills, #portfolio, #references, .arrow-to-next-section {
 }
 
 #about-right {
-    display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     width: 45%;
@@ -148,13 +147,16 @@ nav, #hero, #about, #skills, #portfolio, #references, .arrow-to-next-section {
 #about-right img {
     display: block;
     width: 100%;
+    max-width: 500px;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
 #about-portrait-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: relative;
-    width: 100%;
 }
 
 #about-right:hover #about-portrait-wrapper::after {
@@ -164,7 +166,7 @@ nav, #hero, #about, #skills, #portfolio, #references, .arrow-to-next-section {
 #about-right #about-portrait-wrapper::after {
     content: "";
     position: absolute;
-    inset: 15px -15px -15px 15px;
+    inset: 15px 15px -15px -15px;
     border: 4px solid #000;
     pointer-events: none;
     transition: all .2s ease-in-out;
