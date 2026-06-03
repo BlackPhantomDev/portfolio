@@ -75,6 +75,28 @@ footer {
     resize: vertical;
     min-height: 170px;
     padding-top: 22px;
+    scrollbar-width: thin;
+    scrollbar-color: #5FE3C9 transparent;
+}
+
+.form-field textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.form-field textarea::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 2px;
+}
+
+.form-field textarea::-webkit-scrollbar-thumb {
+    background-color: #5FE3C9;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.form-field textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #4ad0b6;
 }
 
 .form-field label {
@@ -195,21 +217,12 @@ footer {
     color: #fff;
 }
 
-#accept-privacy-policy-label {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #accept-privacy-link {
-    display: flex;
-    justify-content: center;
-    min-width: 110px;
-    margin: 0 16px;
-    text-align: center;
+    transition: text-shadow .2s ease;
 }
 
 #accept-privacy-link:hover {
-    font-weight: 800;
+    text-shadow: 0.4px 0 0 currentColor, -0.4px 0 0 currentColor;
 }
 
 #form-captcha {
@@ -362,4 +375,17 @@ footer {
 #footer-legal-links a:hover::after {
     transform: scaleX(1);
     transform-origin: left center;
+}
+
+.form-field input:-webkit-autofill,
+.form-field input:-webkit-autofill:hover,
+.form-field input:-webkit-autofill:focus,
+.form-field textarea:-webkit-autofill,
+.form-field textarea:-webkit-autofill:hover,
+.form-field textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px black inset;
+    box-shadow: 0 0 0 1000px black inset;
+    -webkit-text-fill-color: #fff;
+    transition: background-color 9999s ease-in-out 0s;
+    caret-color: #fff;
 }
