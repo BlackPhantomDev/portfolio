@@ -132,7 +132,7 @@
     #legal-content h1 { font-size: 64px; margin-bottom: 48px; }
     #legal-content h2 { font-size: 36px; }
     #legal-content h3 { font-size: 23px; }
-    .legal-block { padding: 32px; margin-bottom: 32px; }
+    .legal-block { margin-bottom: 32px; }
 }
 
 @media (max-width: 768px) {
@@ -259,7 +259,7 @@
     #legal-content li,
     #legal-content dd { font-size: 16px; }
     #legal-content address { font-size: 18px; }
-    .legal-block { padding: 28px; margin-bottom: 28px; }
+    .legal-block { margin-bottom: 28px; }
     #legal-content th,
     #legal-content td { padding: 12px; font-size: 14px; }
 }
@@ -384,7 +384,7 @@
     #legal-content h2 { font-size: 26px; margin-top: 32px; }
     #legal-content h3 { font-size: 20px; }
     #legal-content address { font-size: 17px; }
-    .legal-block { padding: 22px; margin-bottom: 24px; }
+    .legal-block {margin-bottom: 24px; }
     #legal-content th,
     #legal-content td { padding: 10px; }
 }
@@ -406,7 +406,6 @@
     #legal-content p,
     #legal-content li,
     #legal-content dd { font-size: 16px; }
-    .legal-block { padding: 18px; }
     #legal-content th,
     #legal-content td { padding: 8px; font-size: 13px; }
 }
@@ -420,7 +419,6 @@
     #legal-section { padding: 28px 12px 48px; }
     #legal-content h1 { font-size: 28px; }
     #legal-content h2 { font-size: 21px; }
-    .legal-block { padding: 16px; }
 }
 
 @media (hover: none) and (max-width: 1024px) {
