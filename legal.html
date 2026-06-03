@@ -29,7 +29,25 @@
             </div>
         </nav>
     </header>
-
+    <div id="scroll-top-anchor"></div>
+    <div id="nav-overlay" aria-hidden="true">
+        <nav id="nav-overlay-menu">
+            <a href="#about" class="nav-overlay-link" data-i18n="about.title">About me</a>
+            <a href="#skills" class="nav-overlay-link" data-i18n="skills.title">My skills</a>
+            <a href="#portfolio" class="nav-overlay-link" data-i18n="portfolio.title">Portfolio</a>
+        </nav>
+        <div id="nav-overlay-footer">
+            <div id="nav-overlay-footer-left">
+                <h2 id="nav-overlay-title" data-i18n="contact.footerTitle">Say Hi!</h2>
+                <a id="nav-overlay-email" href="mailto:info@mischasiegrist.ch">info@mischasiegrist.ch</a>
+            </div>
+            <div id="nav-overlay-socials">
+                <a href="https://github.com/BlackPhantomDev" target="_blank"><img src="./assets/icons/github.svg" alt="GitHub Icon" data-i18n-attr="alt:footer.githubAlt"></a>
+                <a href="mailto:info@mischasiegrist.ch"><img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-attr="alt:footer.mailAlt"></a>
+                <a href="https://www.xing.com/profile/Mischa_Siegrist039383" target="_blank"><img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-attr="alt:footer.xingAlt"></a>
+            </div>
+        </div>
+    </div>
     <main>
         <section id="legal-section">
             <div id="legal-content">
@@ -108,7 +126,7 @@
                     </div>
                     <br><br>
                     <div id="form-captcha">
-                        <div class="h-captcha" data-sitekey="ebba1710-83a6-4e3e-b424-677cc038ed60"></div>
+                        <div id="hcaptcha-container"></div>
                     </div>
                     <br><br>
                     <div id="form-errors">
@@ -121,23 +139,23 @@
 
                     <input class="primary-btn disabled" id="submit-form" value="Send message" name="submit" type="submit" data-i18n-attr="value:contact.submit" />
                 </form>
-                <span id="arrow-back-to-top" onclick="window.location.href='#'">
+                <span id="arrow-back-to-top" onclick="window.location.href='#scroll-top-anchor'">
                     <svg width="53" height="95" viewBox="0 0 53 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.41421 67.1052L26.4142 92.1052L51.4142 67.1052" stroke="black" stroke-width="4"/>
-                        <path d="M26.4142 0V92.1053" stroke="black" stroke-width="4"/>
+                        <path class="btt-head" d="M1.41421 67.1052L26.4142 92.1052L51.4142 67.1052" stroke="white" stroke-width="4"/>
+                        <path class="btt-shaft" d="M26.4142 0V92.1053" stroke="white" stroke-width="4"/>
                     </svg>
                 </span>
             </div>
             <div id="footer-links">
                 <div id="footer-links-left">
                     <img src="./assets/img/logo-footer.svg" alt="Logo" data-i18n-attr="alt:footer.logoAlt">
-                    <p><span data-i18n="footer.copyright">© First Name</span> <span id="footer-year"></span></p>
+                    <p><span data-i18n="footer.copyright">© Mischa Siegrist</span> <span id="footer-year"></span></p>
                 </div>
                 <div id="footer-links-right">
                     <div id="footer-links-right-icons">
                         <a href="https://github.com/BlackPhantomDev"><img src="./assets/icons/github.svg" alt="GitHub Icon" data-i18n-attr="alt:footer.githubAlt"></a>
-                        <a href="mailto:info@firstname.com"><img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-attr="alt:footer.mailAlt"></a>
-                        <a href="https://www.xing.com/profile/"><img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-attr="alt:footer.xingAlt"></a>
+                        <a href="mailto:info@mischasiegrist.ch"><img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-attr="alt:footer.mailAlt"></a>
+                        <a href="https://www.xing.com/profile/Mischa_Siegrist039383"><img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-attr="alt:footer.xingAlt"></a>
                     </div>
                     <div id="footer-legal-links">
                         <a href="./legal.html" data-i18n="footer.legal">Legal notice</a>

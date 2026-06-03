@@ -13,7 +13,7 @@
       <nav>
         <div id="nav-left">
           <div id="nav-logo-container">
-            <img id="nav-logo" src="./assets/img/logo.svg" alt="Logo" data-i18n-html-attr="alt:meta.logoAlt" />
+            <img id="nav-logo" src="./assets/img/logo.svg" alt="Logo" data-i18n-attr="alt:meta.logoAlt">
           </div>
         </div>
         <div id="nav-right">
@@ -29,7 +29,25 @@
         </div>
       </nav>
     </header>
-
+    <div id="scroll-top-anchor"></div>
+    <div id="nav-overlay" aria-hidden="true">
+        <nav id="nav-overlay-menu">
+            <a href="#about" class="nav-overlay-link" data-i18n="about.title">About me</a>
+            <a href="#skills" class="nav-overlay-link" data-i18n="skills.title">My skills</a>
+            <a href="#portfolio" class="nav-overlay-link" data-i18n="portfolio.title">Portfolio</a>
+        </nav>
+        <div id="nav-overlay-footer">
+            <div id="nav-overlay-footer-left">
+                <h2 id="nav-overlay-title" data-i18n="contact.footerTitle">Say Hi!</h2>
+                <a id="nav-overlay-email" href="mailto:info@mischasiegrist.ch">info@mischasiegrist.ch</a>
+            </div>
+            <div id="nav-overlay-socials">
+                <a href="https://github.com/BlackPhantomDev" target="_blank"><img src="./assets/icons/github.svg" alt="GitHub Icon" data-i18n-attr="alt:footer.githubAlt"></a>
+                <a href="mailto:info@mischasiegrist.ch"><img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-attr="alt:footer.mailAlt"></a>
+                <a href="https://www.xing.com/profile/Mischa_Siegrist039383" target="_blank"><img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-attr="alt:footer.xingAlt"></a>
+            </div>
+        </div>
+    </div>
     <main>
       <section id="legal-section">
         <div id="legal-content">
@@ -626,111 +644,83 @@
 
     <footer id="contact">
       <div id="inner-footer-wrapper">
-        <h2 id="footer-title" data-i18n-html="contact.footerTitle">Say Hi!</h2>
+        <h2 id="footer-title" data-i18n="contact.footerTitle">Say Hi!</h2>
         <div id="contact-form-wrapper">
           <form action="https://sd.mischasiegrist.ch/mailer.php" id="contact-form" novalidate onsubmit="return false;">
-            <h3 class="highlighted-text" data-i18n-html="contact.formHeading">Want to discouss a new project?</h3>
-            <p data-i18n-html="contact.formIntro">Say hello! Let's discuss your ideas and make it happen</p>
+              <h3 class="highlighted-text" data-i18n="contact.formHeading">Want to discouss a new project?</h3>
+              <p data-i18n="contact.formIntro">Say hello! Let's discuss your ideas and make it happen</p>
 
-            <div class="form-field">
-              <input type="text" id="form-name" name="name" maxlength="100" placeholder=" " required />
-              <label for="form-name" data-i18n-html="contact.nameLabel">Your name</label>
-              <span class="field-icon"></span>
-              <span class="field-error" data-i18n-html="contact.nameError">Your name is required</span>
-            </div>
+              <div class="form-field">
+                  <input type="text" id="form-name" name="name" maxlength="100" placeholder=" " required>
+                  <label for="form-name" data-i18n="contact.nameLabel">Your name</label>
+                  <span class="field-icon"></span>
+                  <span class="field-error" data-i18n="contact.nameError">Your name is required</span>
+              </div>
 
-            <div class="form-field">
-              <input type="email" id="form-email" name="email" maxlength="254" placeholder=" " required />
-              <label for="form-email" data-i18n-html="contact.emailLabel">Your email</label>
-              <span class="field-icon"></span>
-              <span class="field-error" data-i18n-html="contact.emailError">Please enter a valid email</span>
-            </div>
+              <div class="form-field">
+                  <input type="email" id="form-email" name="email" maxlength="254" placeholder=" " required>
+                  <label for="form-email" data-i18n="contact.emailLabel">Your email</label>
+                  <span class="field-icon"></span>
+                  <span class="field-error" data-i18n="contact.emailError">Please enter a valid email</span>
+              </div>
 
-            <div class="form-field">
-              <input type="text" id="form-subject" name="subject" maxlength="200" placeholder=" " required />
-              <label for="form-subject" data-i18n-html="contact.subjectLabel">Your subject</label>
-              <span class="field-icon"></span>
-              <span class="field-error" data-i18n-html="contact.subjectError">Please enter subject</span>
-            </div>
+              <div class="form-field">
+                  <input type="text" id="form-subject" name="subject" maxlength="200" placeholder=" " required>
+                  <label for="form-subject" data-i18n="contact.subjectLabel">Your subject</label>
+                  <span class="field-icon"></span>
+                  <span class="field-error" data-i18n="contact.subjectError">Please enter subject</span>
+              </div>
 
-            <div class="form-field form-field-textarea">
-              <textarea id="form-text" rows="6" name="message" maxlength="5000" placeholder=" " required></textarea>
-              <label for="form-text" data-i18n-html="contact.messageLabel">Your message</label>
-              <span class="field-icon"></span>
-              <span class="field-error" data-i18n-html="contact.messageError">Your message is empty</span>
-            </div>
+              <div class="form-field form-field-textarea">
+                  <textarea id="form-text" rows="6" name="message" maxlength="5000" placeholder=" " required></textarea>
+                  <label for="form-text" data-i18n="contact.messageLabel">Your message</label>
+                  <span class="field-icon"></span>
+                  <span class="field-error" data-i18n="contact.messageError">Your message is empty</span>
+              </div>
 
-            <div id="form-check-section">
-              <input type="checkbox" name="accept" id="accept-privacy-policy" required />
-              <label
-                for="accept-privacy-policy"
-                id="accept-privacy-policy-label"
-                data-i18n-html="contact.privacyLabelHtml">
-                I've read the
-                <a href="privacy.html" id="accept-privacy-link" class="highlighted-text">privacy policy</a>
-                and agree to the processing of my data as outlined.
-              </label>
-            </div>
-            <br />
-            <br />
-            <div id="form-captcha">
-              <div class="h-captcha" data-sitekey="ebba1710-83a6-4e3e-b424-677cc038ed60"></div>
-            </div>
-            <br />
-            <br />
-            <div id="form-errors"></div>
-            <div id="form-success" hidden data-i18n-html="contact.success">
-              Thanks for your message! I will reply you as soon as posible.
-            </div>
-            <input
-              type="text"
-              name="website"
-              tabindex="-1"
-              autocomplete="off"
-              style="position: absolute; left: -9999px"
-              aria-hidden="true" />
+              <div id="form-check-section">
+                  <input type="checkbox" name="accept" id="accept-privacy-policy" required>
+                  <label for="accept-privacy-policy" id="accept-privacy-policy-label" data-i18n-html="contact.privacyLabelHtml">I've read the <a href="privacy.html" id="accept-privacy-link" class="highlighted-text">privacy policy</a> and agree to the processing of my data as outlined.</label>
+              </div>
+              <br><br>
+              <div id="form-captcha">
+                  <div id="hcaptcha-container"></div>
+              </div>
+              <br><br>
+              <div id="form-errors">
 
-            <input
-              class="primary-btn disabled"
-              id="submit-form"
-              value="Send message"
-              name="submit"
-              type="submit"
-              data-i18n-html-attr="value:contact.submit" />
+              </div>
+              <div id="form-success" hidden data-i18n="contact.success">
+                  Thanks for your message! I will reply you as soon as posible.
+              </div>
+              <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+              <input class="primary-btn disabled" id="submit-form" value="Send message" name="submit" type="submit" data-i18n-attr="value:contact.submit" />
           </form>
-          <span id="arrow-back-to-top" onclick="window.location.href = '#'">
-            <svg width="53" height="95" viewBox="0 0 53 95" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.41421 67.1052L26.4142 92.1052L51.4142 67.1052" stroke="black" stroke-width="4" />
-              <path d="M26.4142 0V92.1053" stroke="black" stroke-width="4" />
-            </svg>
+          <span id="arrow-back-to-top" onclick="window.location.href='#scroll-top-anchor'">
+              <svg width="53" height="95" viewBox="0 0 53 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="btt-head" d="M1.41421 67.1052L26.4142 92.1052L51.4142 67.1052" stroke="white" stroke-width="4"/>
+                  <path class="btt-shaft" d="M26.4142 0V92.1053" stroke="white" stroke-width="4"/>
+              </svg>
           </span>
         </div>
         <div id="footer-links">
-          <div id="footer-links-left">
-            <img src="./assets/img/logo-footer.svg" alt="Logo" data-i18n-html-attr="alt:footer.logoAlt" />
-            <p>
-              <span data-i18n-html="footer.copyright">© First Name</span>
-              <span id="footer-year"></span>
-            </p>
-          </div>
-          <div id="footer-links-right">
-            <div id="footer-links-right-icons">
-              <a href="https://github.com/BlackPhantomDev">
-                <img src="./assets/icons/github.svg" alt="GitHub Icon" data-i18n-html-attr="alt:footer.githubAlt" />
-              </a>
-              <a href="mailto:info@firstname.com">
-                <img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-html-attr="alt:footer.mailAlt" />
-              </a>
-              <a href="https://www.xing.com/profile/">
-                <img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-html-attr="alt:footer.xingAlt" />
-              </a>
+            <div id="footer-links-left">
+                <img src="./assets/img/logo-footer.svg" alt="Logo" data-i18n-attr="alt:footer.logoAlt">
+                <p><span data-i18n="footer.copyright">© Mischa Siegrist</span> <span id="footer-year"></span></p>
             </div>
-            <div id="footer-legal-links">
-              <a href="./legal.html" data-i18n-html="footer.legal">Legal notice</a>
-              <a href="./imprint.html" data-i18n-html="footer.imprint">Imprint</a>
-              <a href="./privacy.html" data-i18n-html="footer.privacy">Privacy policy</a>
+            <div id="footer-links-right">
+                <div id="footer-links-right-icons">
+                    <a href="https://github.com/BlackPhantomDev"><img src="./assets/icons/github.svg" alt="GitHub Icon" data-i18n-attr="alt:footer.githubAlt"></a>
+                    <a href="mailto:info@mischasiegrist.ch"><img src="./assets/icons/mail.svg" alt="Mail Icon" data-i18n-attr="alt:footer.mailAlt"></a>
+                    <a href="https://www.xing.com/profile/Mischa_Siegrist039383"><img src="./assets/icons/xing.svg" alt="Xing Icon" data-i18n-attr="alt:footer.xingAlt"></a>
+                </div>
+                <div id="footer-legal-links">
+                    <a href="./legal.html" data-i18n="footer.legal">Legal notice</a>
+                    <a href="./imprint.html" data-i18n="footer.imprint">Imprint</a>
+                    <a href="./privacy.html" data-i18n="footer.privacy">Privacy policy</a>
+                </div>
             </div>
-          </div>
         </div>
       </div>
     </footer>
