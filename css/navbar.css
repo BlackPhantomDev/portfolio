@@ -135,7 +135,6 @@ body.menu-open #bar3 {
     visibility: hidden;
     pointer-events: none;
     transition: opacity .35s ease, visibility .35s ease;
-    height: 800px;
 }
 
 body.menu-open #nav-overlay {
