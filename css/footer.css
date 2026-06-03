@@ -329,10 +329,12 @@ footer {
 
 #footer-links-right-icons a {
     color: white;
+    transition: all .2s ease-in-out;
 }
 
 #footer-links-right-icons a:hover {
     margin-top: -24px;
+    transition: all .2s ease-in-out;
 }
 
 #footer-links-right-icons img {
