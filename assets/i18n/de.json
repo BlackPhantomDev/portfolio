@@ -88,7 +88,9 @@
       "phoneInvalid": "Ungültige Telefonnummer.",
       "configMissing": "Server-Konfigurationsfehler. Bitte später erneut versuchen.",
       "methodNotAllowed": "Methode nicht erlaubt.",
-      "sendFailed": "Versand fehlgeschlagen. Bitte später erneut versuchen."
+      "sendFailed": "Versand fehlgeschlagen. Bitte später erneut versuchen.",
+      "privacyMissing": "Zustimmung zur Datenschutzerklärung fehlt.",
+      "originDenied": "Nicht erlaubt."
     }
   },
   "footer": {

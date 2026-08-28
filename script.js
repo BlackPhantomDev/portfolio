@@ -88,6 +88,8 @@ const BACKEND_ERROR_MAP = {
     'Captcha-Verifikation nicht erreichbar.':                 'contact.errors.captchaUnreachable',
     'Captcha-Prüfung fehlgeschlagen.':                        'contact.errors.captchaFailed',
     'Versand fehlgeschlagen. Bitte später erneut versuchen.': 'contact.errors.sendFailed',
+    'Zustimmung zu Datenschutzerklärung und AGB fehlt.':      'contact.errors.privacyMissing',
+    'Nicht erlaubt.':                                         'contact.errors.originDenied',
 };
 
 /**
@@ -107,20 +109,21 @@ function mapBackendError(backendMsg) {
 
 /**
  * Raw backend error strings for which NO cooldown should be started. The mailer
- * rejects these BEFORE it writes its rate-limit timestamp (the config and
- * method checks run ahead of the rate-limit logic), so no server-side timer is
- * ticking and an immediate retry is legitimate. Every other outcome — all
- * validation/captcha/send errors and success — happens AFTER the timestamp is
- * written, meaning the 30s rate window is already running and the button must
- * lock to match it.
+ * rejects these BEFORE it writes its rate-limit timestamp — the config check,
+ * the origin check and the method check all run ahead of the rate-limit logic —
+ * so no server-side timer is ticking and an immediate retry is legitimate.
+ * Every other outcome — all validation/captcha/send errors and success —
+ * happens AFTER the timestamp is written, meaning the 30s rate window is
+ * already running and the button must lock to match it.
+ * Keep in sync with the guard order in mailer.php.
  *
  * @type {Set<string>}
  */
 const NO_COOLDOWN_ERRORS = new Set([
     'Konfiguration nicht gefunden.',
     'Methode nicht erlaubt.',
+    'Nicht erlaubt.',
 ]);
-
 /**
  * Current page path, used to skip section-scroll wiring on legal pages.
  * @type {string}
@@ -185,14 +188,14 @@ function saveField(field) {
 }
 
 /**
- * Remove all contact-form values (including the accept entry) from
+ * Remove all contact-form values (including the privacy entry) from
  * sessionStorage.
  *
  * @returns {void}
  */
 function clearFormStorage() {
     fields.forEach(field => sessionStorage.removeItem(STORAGE_PREFIX + field.name));
-    sessionStorage.removeItem(STORAGE_PREFIX + 'accept');
+    sessionStorage.removeItem(STORAGE_PREFIX + 'privacy');
 }
 
 /**
@@ -267,7 +270,9 @@ function hideFormMessages() {
  * @returns {void}
  */
 function resetCaptcha() {
-    if (typeof hcaptcha !== 'undefined') hcaptcha.reset();
+    if (typeof hcaptcha !== 'undefined' && typeof captchaId !== 'undefined' && captchaId !== null) {
+        hcaptcha.reset(captchaId);
+    }
 }
 
 /**

@@ -88,7 +88,9 @@
       "phoneInvalid": "Invalid phone number.",
       "configMissing": "Server configuration error. Please try again later.",
       "methodNotAllowed": "Method not allowed.",
-      "sendFailed": "Sending failed. Please try again later."
+      "sendFailed": "Sending failed. Please try again later.",
+      "privacyMissing": "Consent to the privacy policy is missing.",
+      "originDenied": "Not allowed."
     }
   },
   "footer": {
